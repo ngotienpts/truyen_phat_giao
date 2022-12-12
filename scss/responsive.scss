@@ -1,0 +1,167 @@
+// max width 1400px
+@media (max-width: 87.5em) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+// max width 1280px
+@media (max-width: 80em) {
+  .d-xl-none {
+    display: none;
+  }
+  .d-xl-block {
+    display: block;
+  }
+  .d-xl-flex {
+    display: flex;
+  }
+  /*-------------------------------------------------------------*/
+}
+// max width 1024px
+@media (max-width: 64em) {
+  .d-lg-none {
+    display: none;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+  /*-------------------------------------------------------------*/
+  .header-nav-mb {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: auto;
+    & .navbar-item {
+      font-size: 10px;
+      line-height: 18px;
+      text-transform: uppercase;
+      & + .navbar-item {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+// max width 992px
+@media (max-width: 62em) {
+}
+// max width 768px
+@media (max-width: 48em) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+  /*-------------------------------------------------------------*/
+  #main {
+    margin-bottom: 35px;
+  }
+  .top-main-mb {
+    & img {
+      width: 100%;
+    }
+  }
+  .main-block {
+    margin-top: 24px;
+
+    & .heading-primary {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    & .container-block {
+      margin-top: 20px;
+    }
+
+    & .see-more {
+      font-size: 12px;
+    }
+  }
+
+  .updated-works {
+    & .container-block {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    & .container-block-content {
+      margin-top: 10px;
+    }
+
+    & .container-block-heading {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+
+    & .container-block-author {
+      display: none;
+    }
+  }
+
+  .most-read-works {
+    & .container-block {
+      display: block;
+      & .col {
+        width: 100%;
+      }
+      & .col-title {
+        font-size: 15px;
+        line-height: 21px;
+        color: #6d1d1d;
+      }
+    }
+
+    & .col-item-heading {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 2px;
+    }
+
+    & .col-item-author {
+      margin-bottom: 2px;
+    }
+  }
+
+  .stories-chapters {
+    & .heading-primary {
+      border-bottom: none;
+      text-align: center;
+    }
+    & .item-heading {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .footer-container {
+    & p {
+      font-size: 14px;
+    }
+  }
+}
+
+// max width 640px
+@media (max-width: 40em) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+}
+
+// danh cho man hinh duoi 400px
+@media (max-width: 25em) {
+}
+@media (max-width: 20em) {
+}

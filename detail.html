@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- end favicon -->
+    <title>Chùa Trực Tuyến</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Slab:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./font-awesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- submenu -->
+    <nav id="sidebar" class="" style="position: fixed">
+      <div class="navbar-mb-header">
+        <span class="navbar-mb-header__close js_close_sub">
+          <i class="fa fa-times"></i>
+        </span>
+        <div class="navbar-mb-header__logo">
+          <a href="/" title="">
+            <img src="./images/Logo.png" alt="" class="navbar-mb-header__img" />
+          </a>
+        </div>
+      </div>
+
+      <div class="search-mb">
+        <form action="" method="">
+          <div class="search-mb-flex">
+            <div class="btn-search-mb"><i class="fa fa-search"></i></div>
+            <input type="hidden" name="mod" value="archive" />
+            <input type="hidden" name="act" value="search" />
+            <input
+              type="text"
+              class="form-search-mb"
+              name="search"
+              placeholder="Tìm kiếm"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="navbar-mb-cate-title">Chuyên mục</div>
+
+      <ul class="navbar-mb-cate-list">
+        <li class="navbar-mb-cate-item">
+          <a href="#">Trang chủ</a>
+        </li>
+        <li class="navbar-mb-cate-item">
+          <div class="navbar-mb-cate-item__header">
+            <a href="#" class="navbar-mb-cate-item__title">Tin tức</a>
+            <div class="js_show_drop_mb">
+              <i class="fa fa-chevron-down navbar-mb-cate-item__icon"></i>
+            </div>
+          </div>
+          <ul class="navbar-mb-cate-item__list">
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Trong nước</a>
+            </li>
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Quốc tế</a>
+            </li>
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Tin Phật sự</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- end submenu -->
+    <!-- full menu  -->
+    <div class="full-menu">
+      <div class="w-1080 full-menu-container">
+        <h3 class="full-menu-heading">Tất cả chuyên mục</h3>
+        <span class="close-full-menu"><i class="fa fa-close"></i></span>
+        <div class="full-menu-block">
+          <div class="full-menu-scroll">
+            <ul class="full-menu-list">
+              <li class="full-menu-item">
+                <a href="#" class="full-menu-item__link">Chùa Việt</a>
+              </li>
+              <li class="full-menu-item">
+                <a href="#" class="full-menu-item__link">Phỏng vấn</a>
+              </li>
+              <li class="full-menu-item">
+                <a href="#" class="full-menu-item__link">Kinh Phật</a>
+                <ul class="full-menu-sub">
+                  <li class="full-menu-sub-item">
+                    <a href="#">Kinh Pháp cú</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Chú Đại bi</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Kinh Dược sư</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Kinh Địa Tạng</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Kinh A Di Đà</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="full-menu-item">
+                <a href="#" class="full-menu-item__link"
+                  >Phật giáo thường thức</a
+                >
+                <ul class="full-menu-sub">
+                  <li class="full-menu-sub-item">
+                    <a href="#">Hỏi - Đáp</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Kiến thức</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Hỏi đáp cùng Thầy Viên Minh</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="full-menu-item">
+                <a href="" class="full-menu-item__link"
+                  >Phật pháp và cuộc sống</a
+                >
+                <ul class="full-menu-sub">
+                  <li class="full-menu-sub-item">
+                    <a href="#">Gieo mầm thiện</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Góc nhìn Phật tử</a>
+                  </li>
+                  <li class="full-menu-sub-item">
+                    <a href="#">Phật giáo và người trẻ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end full menu  -->
+    <!-- header -->
+    <div class="detail-header">
+      <div class="detail-header-block">
+        <!-- left -->
+        <div class="detail-header__left">
+          <div class="detail-header__left-pc">
+            <img
+              src="./images/bar_detail.svg"
+              alt=""
+              class="detail-header__left-item js_showMenu"
+            />
+            <div class="detail-header__left-item detail-header__left-volum">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <a href="#" class="detail-header__left-item font-beVN fw-700 lh-24"
+              >Về trang chủ Chùa trực tuyến</a
+            >
+          </div>
+          <div class="detail-header__left-mb">
+            <img
+              src="./images/bar_detail.svg"
+              alt=""
+              class="detail-header__left-item js_show_submenu"
+            />
+            <a href="#" class="detail-header__left-item"><i class="fa-solid fa-house"></i></a>
+          </div>
+        </div>
+        <!-- end left -->
+        <!-- center -->
+        <div class="detail-header__center">
+          <a href="#"
+            ><img src="./images/Logo.png" alt="" class="detail-logo"
+          /></a>
+        </div>
+        <!-- end center -->
+        <!-- right -->
+        <div class="detail-header__right">
+          <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <!-- end right -->
+      </div>
+      <!-- pagination mb -->
+      <div class="pagination-detail-mb">
+        <span class="pagination-detail-mb__title">Điện Thập Bát La Hán</span>
+        <span class="pagination-detail-mb__icon"><i class="fa-solid fa-caret-down"></i></span>
+      </div>
+      <!-- end pagination mb -->
+    </div>
+    <!-- end header -->
+    <!-- partial:index.partial.html -->
+    <div class="detail-primary">
+      <div class="timeline">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- swiper item -->
+            <div
+              class="swiper-slide"
+              style="background-image: url('./images/anh_phat.png')"
+              data-year="Ban Tứ đại Kim Cương"
+            >
+              <div class="swiper-slide-container">
+                <div class="swiper-slide-list carousel">
+                  <!-- item -->
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-content">
+                      <span class="timeline-year">Điện Thập Bát La Hán</span>
+                      <h4 class="timeline-title">La Hán Thác Tháp</h4>
+                      <!-- img -->
+                      <div class="card-secondary card-detail card-detail--mb">
+                        <img
+                          src="./images/duc_phat.png"
+                          alt=""
+                          class="card-secondary__img"
+                        />
+                        <div class="coating"></div>
+                        <h3 class="card-secondary__title">Tụng kinh</h3>
+                      </div>
+                      <!-- end img -->
+                      <p class="timeline-text">
+                        Bên lề hành lang Quốc hội sáng 2/11, ông Trần Văn Lâm,
+                        Uỷ viên Uỷ ban Tài chính ngân sách, nhìn nhận đây là
+                        hiện tượng bất thường. Ông cho rằng, ngay cả khi nguồn
+                        cung thế giới lên cao, giá tăng, xăng dầu khan hiếm cũng
+                        không có hiện tượng bất thường như hiện nay. "Giá dầu
+                        thế giới hiện tương đối ổn định, nhưng thị trường trong
+                        nước lại xảy ra những điều bất thường, phải làm rõ căn
+                        nguyên, lý do", ông Lâm nói.
+                      </p>
+                      <button class="see-more-detail">
+                        <span class="see-more-detail__icon">
+                          <i class="fa-solid fa-angles-down"></i>
+                        </span>
+                        <span class="see-more-detail__text"
+                          >Click để xem tiếp</span
+                        >
+                      </button>
+                    </div>
+                    <!-- img -->
+                    <div class="card-secondary card-detail  card-detail--pc">
+                      <img
+                        src="./images/duc_phat.png"
+                        alt=""
+                        class="card-secondary__img"
+                      />
+                      <div class="coating"></div>
+                      <h3 class="card-secondary__title">Tụng kinh</h3>
+                    </div>
+                    <!-- end img -->
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-content">
+                      <span class="timeline-year">Điện Thập Bát La Hán</span>
+                      <h4 class="timeline-title">La Hán Thác Tháp</h4>
+                      <!-- img -->
+                      <div class="card-secondary card-detail card-detail--mb">
+                        <img
+                          src="./images/duc_phat.png"
+                          alt=""
+                          class="card-secondary__img"
+                        />
+                        <div class="coating"></div>
+                        <h3 class="card-secondary__title">Niệm phật</h3>
+                      </div>
+                      <!-- end img -->
+                      <p class="timeline-text">
+                        Ông Phan Đức Hiếu, Uỷ viên thường trực Uỷ ban Kinh tế đặt vấn đề, hiện nay Hà Nội có nhiều dự án nhà ở, khu đô thị hạ tầng xuống cấp nhưng không thể nâng cấp do chưa bàn giao cho chính quyền; ban quản lý khu đô thị, chủ đầu tư cũng không thể nâng cấp. Điều này đã ảnh hưởng tới đời sống người dân, cảnh quan đô thị.
+                      </p>
+                      <button class="see-more-detail">
+                        <span class="see-more-detail__icon">
+                          <i class="fa-solid fa-angles-down"></i>
+                        </span>
+                        <span class="see-more-detail__text"
+                          >Click để xem tiếp</span
+                        >
+                      </button>
+                    </div>
+                    <!-- img -->
+                    <div class="card-secondary card-detail  card-detail--pc">
+                      <img
+                        src="./images/duc_phat.png"
+                        alt=""
+                        class="card-secondary__img"
+                      />
+                      <div class="coating"></div>
+                      <h3 class="card-secondary__title">Tụng kinh</h3>
+                    </div>
+                    <!-- end img -->
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- bai vong dang huong -->
+                <div class="swiper-slide-btn change-incensory">
+                  <button class="swiper-slide-btn__item">
+                    <img
+                      src="./images/candle.png"
+                      alt=""
+                      class="swiper-slide-btn__img"
+                    />
+                    <span>Dâng hương</span>
+                  </button>
+                  <!-- lu huong -->
+                  <div class="incensory">
+                    <div class="smoke">
+                        <img src="./images/khoi.png" alt="" class="img-smoke">
+                        <img src="./images/huong.png" alt="" class="img-incensory">
+                        <canvas class="canvas" height="300" width="150"></canvas>
+                    </div>
+                  </div>
+                  <!-- end lu huong -->
+                </div>
+                <!-- end bai vong dang huong -->
+                <!--  -->
+                <div class="swiper-slide-text">
+                  <a href="#" class="swiper-slide-text__home"
+                    ><i class="fa-solid fa-house"></i
+                  ></a>
+                  <h3 class="swiper-slide-text__title">Điện Thập Bát La Hán</h3>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+            <!-- end swiper item -->
+            <!-- swiper item -->
+            <div
+              class="swiper-slide"
+              style="background-image: url('./images/anh_phat.png')"
+              data-year="Ban Tứ đại Kim Cương"
+            >
+              <div class="swiper-slide-container">
+                <div class="swiper-slide-list carousel">
+                  <!-- item -->
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-content">
+                      <span class="timeline-year">Điện Thập Bát La Hán</span>
+                      <h4 class="timeline-title">La Hán Thác Tháp</h4>
+                      <!-- img -->
+                      <div class="card-secondary card-detail card-detail--mb">
+                        <img
+                          src="./images/duc_phat.png"
+                          alt=""
+                          class="card-secondary__img"
+                        />
+                        <div class="coating"></div>
+                        <h3 class="card-secondary__title">Tụng kinh</h3>
+                      </div>
+                      <!-- end img -->
+                      <p class="timeline-text">
+                        Bên lề hành lang Quốc hội sáng 2/11, ông Trần Văn Lâm,
+                        Uỷ viên Uỷ ban Tài chính ngân sách, nhìn nhận đây là
+                        hiện tượng bất thường. Ông cho rằng, ngay cả khi nguồn
+                        cung thế giới lên cao, giá tăng, xăng dầu khan hiếm cũng
+                        không có hiện tượng bất thường như hiện nay. "Giá dầu
+                        thế giới hiện tương đối ổn định, nhưng thị trường trong
+                        nước lại xảy ra những điều bất thường, phải làm rõ căn
+                        nguyên, lý do", ông Lâm nói.
+                      </p>
+                      <button class="see-more-detail">
+                        <span class="see-more-detail__icon">
+                          <i class="fa-solid fa-angles-down"></i>
+                        </span>
+                        <span class="see-more-detail__text"
+                          >Click để xem tiếp</span
+                        >
+                      </button>
+                    </div>
+                    <!-- img -->
+                    <div class="card-secondary card-detail  card-detail--pc">
+                      <img
+                        src="./images/duc_phat.png"
+                        alt=""
+                        class="card-secondary__img"
+                      />
+                      <div class="coating"></div>
+                      <h3 class="card-secondary__title">Tụng kinh</h3>
+                    </div>
+                    <!-- end img -->
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="swiper-slide-item">
+                    <div class="swiper-slide-content">
+                      <span class="timeline-year">Điện Thập Bát La Hán</span>
+                      <h4 class="timeline-title">La Hán Thác Tháp</h4>
+                      <!-- img -->
+                      <div class="card-secondary card-detail card-detail--mb">
+                        <img
+                          src="./images/duc_phat.png"
+                          alt=""
+                          class="card-secondary__img"
+                        />
+                        <div class="coating"></div>
+                        <h3 class="card-secondary__title">Niệm phật</h3>
+                      </div>
+                      <!-- end img -->
+                      <p class="timeline-text">
+                        Ông Phan Đức Hiếu, Uỷ viên thường trực Uỷ ban Kinh tế đặt vấn đề, hiện nay Hà Nội có nhiều dự án nhà ở, khu đô thị hạ tầng xuống cấp nhưng không thể nâng cấp do chưa bàn giao cho chính quyền; ban quản lý khu đô thị, chủ đầu tư cũng không thể nâng cấp. Điều này đã ảnh hưởng tới đời sống người dân, cảnh quan đô thị.
+                      </p>
+                      <button class="see-more-detail">
+                        <span class="see-more-detail__icon">
+                          <i class="fa-solid fa-angles-down"></i>
+                        </span>
+                        <span class="see-more-detail__text"
+                          >Click để xem tiếp</span
+                        >
+                      </button>
+                    </div>
+                    <!-- img -->
+                    <div class="card-secondary card-detail  card-detail--pc">
+                      <img
+                        src="./images/duc_phat.png"
+                        alt=""
+                        class="card-secondary__img"
+                      />
+                      <div class="coating"></div>
+                      <h3 class="card-secondary__title">Tụng kinh</h3>
+                    </div>
+                    <!-- end img -->
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- bai vong dang huong -->
+                <div class="swiper-slide-btn change-incensory">
+                  <button class="swiper-slide-btn__item">
+                    <img
+                      src="./images/candle.png"
+                      alt=""
+                      class="swiper-slide-btn__img"
+                    />
+                    <span>Dâng hương</span>
+                  </button>
+                  <!-- lu huong -->
+                  <div class="incensory">
+                    <div class="smoke">
+                        <img src="./images/khoi.png" alt="" class="img-smoke">
+                        <img src="./images/huong.png" alt="" class="img-incensory">
+                        <canvas class="canvas" height="300" width="150"></canvas>
+                    </div>
+                  </div>
+                  <!-- end lu huong -->
+                </div>
+                <!-- end bai vong dang huong -->
+                <!--  -->
+                <div class="swiper-slide-text">
+                  <a href="#" class="swiper-slide-text__home"
+                    ><i class="fa-solid fa-house"></i
+                  ></a>
+                  <h3 class="swiper-slide-text__title">Điện Thập Bát La Hán</h3>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+            <!-- end swiper item -->
+            
+
+            
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <!-- quay ve trang chu -->
+    <div class="back-home">
+      <a href="#" class="back-home__link"
+        ><i class="fa-solid fa-house back-home__icon"></i> Quay về</a
+      >
+    </div>
+    <!-- end quay ve trang chu -->
+    <!-- xem tiep right detail -->
+    <button class="see-more-right-detail">
+      <span class="see-more-detail__icon">
+        <i class="fa-solid fa-angles-down"></i>
+      </span>
+      <span class="see-more-detail__text">Xem tiếp</span>
+    </button>
+    <!-- end xem tiep right detail -->
+    <!-- footer -->
+    <div class="detail-footer bg-maroon-6d footer">
+      <div class="footer-content font-secondary text-white w-1080">
+        <p class="footer-left">
+          @Mọi sự copy, sao chép từ Phatgiao.org.vn đều được hoan nghênh!
+        </p>
+        <div class="footer-right">
+          <p>Power by</p>
+          <a href="#"
+            ><img src="./images/Logo.png" alt="" class="footer-logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <script src="./font-awesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="./slick/slick-1.8.1/slick/slick.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
