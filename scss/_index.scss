@@ -1,7 +1,9 @@
-#main {
-  margin-bottom: 90px;
+body {
   background-image: url("../images/Background.png");
   background-repeat: no-repeat;
+}
+#main {
+  padding-bottom: 90px;
 }
 .full-menu {
   background: #fff;
@@ -75,7 +77,7 @@
 }
 
 .main-block {
-  margin-top: 60px;
+  padding-top: 60px;
   & .container-block {
     margin-top: 32px;
   }

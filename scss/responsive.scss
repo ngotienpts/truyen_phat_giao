@@ -60,7 +60,7 @@
   }
   /*-------------------------------------------------------------*/
   #main {
-    margin-bottom: 35px;
+    padding-bottom: 35px;
   }
   .top-main-mb {
     & img {
@@ -68,7 +68,7 @@
     }
   }
   .main-block {
-    margin-top: 24px;
+    padding-top: 24px;
 
     & .heading-primary {
       font-size: 18px;
@@ -84,7 +84,8 @@
     }
   }
 
-  .updated-works {
+  .updated-works,
+  .dedicated-works {
     & .container-block {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
@@ -144,6 +145,49 @@
     & p {
       font-size: 14px;
     }
+  }
+  .dedicated-works {
+    & .swiper-pagination {
+      bottom: -34px;
+    }
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      display: none;
+    }
+  }
+  .detail-field {
+    padding-top: 0;
+  }
+  .detail-select {
+    & .select-title {
+      font-size: 18px;
+    }
+    & .btn {
+      font-size: 12px;
+    }
+
+    & .select-view {
+      padding: 0 20px 0 10px;
+      &::before {
+        right: 10px;
+      }
+    }
+
+    & .select-options {
+      padding: 15px 8px;
+    }
+  }
+  .custom-select {
+    flex: 1;
+  }
+  .detail-content {
+    padding-top: 20px;
+    & p {
+      font-size: 14px;
+    }
+  }
+  .radio-box .check {
+    margin: 0 10px 0 0;
   }
 }
 

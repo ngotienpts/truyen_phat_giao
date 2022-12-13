@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // tabs
   var tabBlock = document.querySelector(".tab-block");
 
+  // fancybox
+  var fancyboxes = document.querySelectorAll(".fancybox-full");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -139,7 +142,42 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     },
-
+    // fancybox
+    fancybox: function () {
+      if (fancyboxes) {
+        fancyboxes.forEach(function (fancybox) {
+          $(".fancybox-full a").fancybox();
+        });
+      }
+    },
+    // slider tác phẩm dành riêng cho bạn
+    sliderĐeicated: function () {
+      var swiper = new Swiper(".mySwiperĐeicated", {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        spaceBetween: 16,
+        loop: true,
+        hideOnClick: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 48,
+            slidesPerGroup: 1,
+            loop: false,
+            centeredSlides: false,
+          },
+        },
+      });
+    },
     // window scroll
     windowScroll: function () {
       var _this = this;
@@ -154,6 +192,10 @@ document.addEventListener("DOMContentLoaded", function () {
       this.handleEvent();
       // window scroll
       this.windowScroll();
+      // fancybox
+      this.fancybox();
+      // slider tác phẩm dành riêng cho bạn
+      this.sliderĐeicated();
     },
   };
 
