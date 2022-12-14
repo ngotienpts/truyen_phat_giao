@@ -177,6 +177,115 @@
   .radio-box .check {
     margin: 0 10px 0 0;
   }
+
+  /*------------------------------------------------------------- danh sach chua viet*/
+  .storage-online {
+    padding: 30px 20px 20px;
+    border: none;
+  }
+  .storage-online .storage-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .storage-online .storage-container {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .storage-online .storage-top, .storage-online .storage-bot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .storage-online .storage-list-header {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 6px 15px;
+  }
+  .storage-online .storage-bot {
+    margin-top: 20px;
+  }
+  .storage-online .storage-list-option {
+    padding: 5px 15px;
+    max-height: 262px;
+  }
+  .storage-online .radio-box .check-txt {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .storage-online .form-control-group {
+    height: 36px;
+    padding: 6px 15px;
+  }
+  .storage-online .form-search-input::-webkit-input-placeholder {
+    /* Internet Explorer */
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .storage-online .form-search-input:-ms-input-placeholder {
+    /* Internet Explorer */
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .storage-online .form-search-input::placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .storage-online .storage-search-btn {
+    font-size: 16px;
+  }
+
+  .search-btn {
+    font-size: 12px;
+  }
+
+  .filter-block {
+    padding: 0 20px;
+  }
+  .filter-block .filter-list {
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  .filter-block .filter-item:last-child {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-block .btn-filter-clear {
+    width: 100%;
+  }
+
+  .search-result {
+    padding: 20px;
+  }
+  .search-result .search-result-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  .search-result .search-result-field {
+    padding: 20px 0 0;
+  }
+  .search-result .search-result-heading {
+    justify-content: space-between;
+  }
+  .search-result .search-result-one .search-result-txt:nth-child(1) {
+    font-size: 18px;
+  }
+  .search-result .search-result-one .search-result-txt:nth-child(2) {
+    font-size: 14px;
+  }
+  .search-result .search-result-two {
+    margin-left: 0;
+  }
+  .search-result .search-result-two .search-result-txt {
+    font-size: 14px;
+  }
+  .search-result .container-block-heading {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .search-result .container-block-address span {
+    font-size: 14px;
+  }
 }
 @media (max-width: 40em) {
   .d-sm-none {

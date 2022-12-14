@@ -227,6 +227,53 @@ img {
   font-weight: 900;
 }
 /*=================================================================*/
+.pt-8 {
+  padding-top: 0.5rem;
+}
+.pb-8 {
+  padding-bottom: 0.5rem;
+}
+.pl-8 {
+  padding-left: 0.5rem;
+}
+.pr-8 {
+  padding-right: 0.5rem;
+}
+.py-8 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.px-8 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.p-8 {
+  padding: 0.5rem;
+}
+.mt-8 {
+  margin-top: 0.5rem;
+}
+.mb-8 {
+  margin-bottom: 0.5rem;
+}
+.ml-8 {
+  margin-left: 0.5rem;
+}
+.mr-8 {
+  margin-right: 0.5rem;
+}
+.my-8 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mx-8 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.m-8 {
+  margin: 0.5rem;
+}
+/*=================================================================*/
 .pt-10 {
   padding-top: 0.625rem;
 }
@@ -498,6 +545,9 @@ img {
 }
 .lh-19 {
   line-height: 1.1875rem;
+}
+.lh-20 {
+  line-height: 1.25rem;
 }
 .lh-22 {
   line-height: 1.375rem;

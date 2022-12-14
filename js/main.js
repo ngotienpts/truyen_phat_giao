@@ -124,6 +124,14 @@ document.addEventListener("DOMContentLoaded", function () {
           };
         });
       }
+      //
+      $(".storage-list .storage-list-header").click(function () {
+        $(this)
+          .parents(".storage-list")
+          .find(".storage-list-option")
+          .slideToggle();
+        $(this).parents(".storage-list").toggleClass("active");
+      });
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
     },
