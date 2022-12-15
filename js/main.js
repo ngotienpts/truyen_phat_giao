@@ -159,8 +159,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
     // slider tác phẩm dành riêng cho bạn
-    sliderĐeicated: function () {
-      var swiper = new Swiper(".mySwiperĐeicated", {
+    sliderDeicated: function () {
+      var swiper = new Swiper(".mySwiperDeicated", {
         slidesPerView: 2,
         slidesPerGroup: 1,
         centeredSlides: true,
@@ -186,6 +186,48 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
     },
+    // slider detail chua primary
+    sliderDetailPgodaPrimary: function () {
+      var swiper = new Swiper(".mySwiperPogodaPrimary", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: true,
+        },
+      });
+    },
+    // slider detail chua secondary
+    sliderDetailPgodaSecondary: function () {
+      var swiper = new Swiper(".mySwiperPogodaSecondaryTxt", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        freeMode: false,
+        allowTouchMove: false,
+        watchSlidesProgress: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".mySwiperPogodaSecondary", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        autoHeight: true,
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    },
     // window scroll
     windowScroll: function () {
       var _this = this;
@@ -203,7 +245,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // fancybox
       this.fancybox();
       // slider tác phẩm dành riêng cho bạn
-      this.sliderĐeicated();
+      this.sliderDeicated();
+      // slider detail chua primary
+      this.sliderDetailPgodaPrimary();
+      // slider detail chua secondary
+      this.sliderDetailPgodaSecondary();
     },
   };
 

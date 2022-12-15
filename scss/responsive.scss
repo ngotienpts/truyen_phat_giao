@@ -192,6 +192,7 @@
   /*------------------------------------------------------------- danh sach chua viet*/
   .storage-online {
     padding: 30px 20px 20px;
+    margin-top: 0;
     border: none;
     & .storage-heading {
       font-size: 16px;
@@ -311,6 +312,80 @@
 
     & .container-block-address span {
       font-size: 14px;
+    }
+  }
+  /*------------------------------------------------------------- detail chua viet*/
+  .detail-pagoda-slider-img {
+    height: 260px;
+  }
+
+  .detail-pagoda-map iframe {
+    width: 100%;
+  }
+  .detail-pagoda-slider-seconadry {
+    padding: 10px 20px;
+
+    & .detail-pagoda-slider-content {
+      display: block;
+    }
+
+    & .slider-content-left {
+      padding-right: 0;
+    }
+
+    & .slider-content-left-txt {
+      font-size: 14px;
+    }
+
+    & .slider-content-left-title {
+      font-size: 20px;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    & .mySwiperPogodaSecondaryTxt {
+      margin-bottom: 20px;
+    }
+
+    & .detail-pagoda-slider-text.swiper-slide-thumb-active {
+      border-width: 1px;
+    }
+
+    & .detail-pagoda-slider-text {
+      padding: 10px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      color: #6d1d1d;
+
+      &:after {
+        font-size: 15px;
+      }
+    }
+
+    & .swiper-button-next {
+      right: -10px;
+    }
+
+    & .swiper-button-prev {
+      left: -10px;
+    }
+  }
+  .detail-pagoda-contact {
+    display: block;
+    border-bottom: none;
+    padding: 20px;
+    background-color: #f2f2f4;
+    margin-bottom: 0;
+
+    & .detail-pagoda-address {
+      padding: 20px 0;
+    }
+    & .detail-pagoda-address-title {
+      font-size: 18px;
+      padding-bottom: 0;
     }
   }
 }

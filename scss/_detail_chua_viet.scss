@@ -1,0 +1,81 @@
+.main-block2 {
+  padding-top: 50px;
+}
+.detail-pagoda-slider-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.detail-pagoda-slider-primary {
+  max-width: 1920px;
+  & .swiper-pagination2 {
+    bottom: 20px;
+  }
+  & .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+  }
+  & .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+}
+.detail-pagoda-slider-seconadry {
+  & .mySwiperPogodaSecondaryTxt {
+    margin-bottom: 70px;
+  }
+  & .detail-pagoda-slider-text {
+    padding: 30px 10px;
+    border-bottom: 1px solid #999;
+    color: #999;
+    transition: 0.3s ease-in-out;
+    will-change: all;
+    cursor: pointer;
+    &.swiper-slide-thumb-active {
+      color: #6d1d1d;
+      border-color: #6d1d1d;
+      border-width: 2px;
+    }
+  }
+
+  & .detail-pagoda-slider-content {
+    display: flex;
+  }
+  & .slider-content-left {
+    flex: 1;
+    padding-right: 115px;
+  }
+  & .slider-content-left-txt {
+    text-align: justify;
+
+    & p {
+      margin-bottom: 15px;
+    }
+  }
+  & .slider-content-right {
+    flex-shrink: 0;
+    width: 30%;
+    & .thumb-img {
+      border-radius: 25px;
+    }
+    & .thumb-5x3 {
+      padding-bottom: 100%;
+    }
+  }
+}
+
+.detail-pagoda-contact {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #6d1d1d;
+  margin-bottom: 50px;
+
+  & .detail-pagoda-address {
+    flex: 1;
+    background-color: #f2f2f4;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

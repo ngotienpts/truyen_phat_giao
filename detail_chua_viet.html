@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon.png" sizes="32x32">
+    <!-- end favicon -->
+    <title>Truyện Phật Giáo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="./font-awesome/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./lib/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- submenu -->
+    <nav id="sidebar" class="" style="position: fixed">
+      <div class="navbar-mb-header">
+        <span class="navbar-mb-header__close js_close_sub">
+          <i class="fa fa-times"></i>
+        </span>
+        <div class="navbar-mb-header__logo">
+          <a href="/" title="">
+            <img src="./images/Logo.png" alt="" class="navbar-mb-header__img" />
+          </a>
+        </div>
+      </div>
+
+      <div class="search-mb">
+        <form action="" method="">
+          <div class="search-mb-flex">
+            <div class="btn-search-mb"><i class="fa fa-search"></i></div>
+            <input type="hidden" name="mod" value="archive" />
+            <input type="hidden" name="act" value="search" />
+            <input
+              type="text"
+              class="form-search-mb"
+              name="search"
+              placeholder="Tìm kiếm"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="navbar-mb-cate-title">Chuyên mục</div>
+
+      <ul class="navbar-mb-cate-list">
+        <li class="navbar-mb-cate-item">
+          <a href="#">Trang chủ</a>
+        </li>
+        <li class="navbar-mb-cate-item">
+          <div class="navbar-mb-cate-item__header">
+            <a href="#" class="navbar-mb-cate-item__title">Tin tức</a>
+            <div class="js_show_drop_mb">
+              <i class="fa fa-chevron-down navbar-mb-cate-item__icon"></i>
+            </div>
+          </div>
+          <ul class="navbar-mb-cate-item__list">
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Trong nước</a>
+            </li>
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Quốc tế</a>
+            </li>
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Tin Phật sự</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- end submenu -->
+  
+    <!-- header -->
+    <header id="header">
+      <div class="header">
+        <!-- header top -->
+        <div class="bg-red-6d">
+          <div class="header-top fs-14 text-white-f2 w-1408 wrapper d-2xl-flex d-md-none align-items-center justify-content-between">
+            <!-- left -->
+            <div class="header-top__left d-2xl-flex align-items-center">
+              <p class="header-top__left-item"><strong>Thứ 6</strong>, 10/28/2022 10:25(GMT+7)</p>
+              <a class="header-top__left-item" href="#">Kinh phật</a>
+              <a class="header-top__left-item" href="#">Vật phẩm phật giáo</a>
+              <a class="header-top__left-item" href="#">Mới nhất</a>
+              <a class="header-top__left-item" href="#">Đức pháp chủ</a>
+            </div>
+            <!-- end left -->
+            <!-- right -->
+            <div class="header-top__right d-2xl-flex align-items-center">
+              <a href="#" class="header-top__right-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="header-top__right-icon">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="header-top__right-icon">
+                <i class="fab fa-tiktok"></i>
+              </a>
+  
+              <div class="header-top__right-wether">Hà Nội&nbsp; <strong>25*C</strong> &nbsp; <strong>61%</strong></div>
+              
+            </div>
+            <!-- end right -->
+          </div>
+          <!-- mb -->
+          <div class="header-top-mb d-2xl-none d-md-flex align-items-center justify-content-between fs-12 text-white px-20">
+            <p class=""><strong>Thứ 6</strong>, 10/28/2022 10:25(GMT+7)</p>
+            <a class="" href="#">&#8226;&nbsp;Quan tâm</a>
+          </div>
+          <!-- end mb -->
+        </div>
+        <!-- end header top -->
+        <!-- navbar -->
+        <div class="navbar-block d-2xl-block d-lg-none">
+          <ul class="navbar w-1552  wrapper d-2xl-flex align-items-center justify-content-between text-uppercase">
+            <li class="navbar-item">
+              <a href="#">
+                <img src="./images/logo.png" alt="">
+              </a>
+            </li>
+            <li class="navbar-item active home">
+              <a href="#">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Chùa trực tuyến</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Tam tạng kinh điển</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Kho tàng phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Truyện phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Từ điển phật học</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Phatgiao.org</a>
+              
+            </li>
+            <li class="navbar-item js_showMenu">
+              Tất Cả
+              <i class="fas fa-bars"></i>
+            </li>
+            <li class="navbar-item js_showSearch">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- end navbar -->
+        <!-- navbar mb -->
+        <div class="bg-gray-f2 d-2xl-none d-lg-block">
+          <ul class="navbar-block-mb d-lg-flex align-items-center justify-content-between px-20 py-10 ">
+            <li class="navbar-mb-bar js_show_submenu">
+              <i class="fas fa-bars"></i>
+            </li>
+            <li class="navbar-mb-logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="">
+              </a>
+            </li>
+            <li class="navbar-mb-search js_showSearch">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+          <ul class="header-nav-mb d-lg-flex align-items-center px-20 py-10">
+            <li class="navbar-item active home">
+              <a href="#">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Chùa trực tuyến</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Tam tạng kinh điển</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Kho tàng phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Truyện phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Từ điển phật học</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Phatgiao.org</a>
+              
+            </li>
+          </ul>
+        </div>
+        <!-- end navbar mb -->
+        <!-- full menu  -->
+       <div class="full-menu">
+        <div class="w-1408 wrapper full-menu-container">
+          <h3 class="full-menu-heading">Tất cả chuyên mục</h3>
+          <span class="close-full-menu"><i class="fa fa-close"></i></span>
+          <div class="full-menu-block">
+            <div class="full-menu-scroll">
+              <ul class="full-menu-list">
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link">Chùa Việt</a>
+                </li>
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link">Phỏng vấn</a>
+                </li>
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link">Kinh Phật</a>
+                  <ul class="full-menu-sub">
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh Pháp cú</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Chú Đại bi</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh Dược sư</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh Địa Tạng</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh A Di Đà</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link"
+                    >Phật giáo thường thức</a
+                  >
+                  <ul class="full-menu-sub">
+                    <li class="full-menu-sub-item">
+                      <a href="#">Hỏi - Đáp</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kiến thức</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Hỏi đáp cùng Thầy Viên Minh</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="full-menu-item">
+                  <a href="" class="full-menu-item__link"
+                    >Phật pháp và cuộc sống</a
+                  >
+                  <ul class="full-menu-sub">
+                    <li class="full-menu-sub-item">
+                      <a href="#">Gieo mầm thiện</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Góc nhìn Phật tử</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Phật giáo và người trẻ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end full menu  -->
+      <!-- search -->
+      <div class="search-header">
+        <div class="w-1408 wrapper">
+          <form action="" >
+            <div
+              class="form-control-group d-2xl-flex align-items-center position-relative">
+              <input type="text" name="search-header" class="from-control-input form-search-input" placeholder="Tìm kiếm" autocomplete="off"/>
+              <div class="position-absolute search-header-btn">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end search -->
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      
+        <!-- kho tàng phật giáo online -->
+        <div class="storage-online w-1408">
+            <h1 class="storage-heading text-white fs-20 fw-700 text-uppercase lh-28 bg-red-6d text-center">kho tàng phật giáo online</h1>
+            <!-- container -->
+            <div class="storage-container">
+                <!-- top -->
+                <div class="storage-top">
+                  <!-- list -->
+                  <div class="storage-list list-pagoda">
+                    <div class="storage-list-header d-2xl-flex align-items-center justify-content-between">
+                      <h3 class="storage-list-title fw-500 lh-24 text-gray-26">Danh sách chùa Việt</h3>
+                      <span class="storage-list-down fs-12 text-red-6d">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="storage-list-option">
+                      <li class="radio-box" rel="chap-1">
+                        <input type="radio" id="chap-1" name="select" checked="">
+                        <label for="chap-1">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-2">
+                        <input type="radio" id="chap-2" name="select">
+                        <label for="chap-2">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 2</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-3">
+                        <input type="radio" id="chap-3" name="select">
+                        <label for="chap-3">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end list -->
+                  <!-- search -->
+                  <div class="storage-search">
+                    <div class="storage-search-group">
+                      <form action="" >
+                        <div
+                          class="form-control-group d-2xl-flex align-items-center position-relative">
+                          <input type="text" name="search-storage" class="from-control-input form-search-input w-100 d-2xl-block d-md-none" placeholder="Nhập từ khóa tìm kiếm (vi dụ 1, ví dụ 2,...)" autocomplete="off"/>
+                          <input type="text" name="search-storage" class="from-control-input form-search-input w-100 d-2xl-none d-md-block" placeholder="Tìm kiếm" autocomplete="off"/>
+                          <div class="position-absolute storage-search-btn">
+                            <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- end search -->
+                </div>
+                <!-- end top -->
+                <!-- bot -->
+                <div class="storage-bot">
+                  <!-- item -->
+                  <div class="storage-list storage-type">
+                    <div class="storage-list-header d-2xl-flex align-items-center justify-content-between">
+                      <h3 class="storage-list-title fw-500 lh-24 text-gray-26">Tông phái</h3>
+                      <span class="storage-list-down fs-12 text-red-6d">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="storage-list-option">
+                      <li class="radio-box" rel="chap-14">
+                        <input type="radio" id="chap-14" name="sect" checked="">
+                        <label for="chap-14">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-15">
+                        <input type="radio" id="chap-15" name="sect">
+                        <label for="chap-15">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 2</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-16">
+                        <input type="radio" id="chap-16" name="sect">
+                        <label for="chap-16">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-17">
+                        <input type="radio" id="chap-17" name="sect">
+                        <label for="chap-17">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-18">
+                        <input type="radio" id="chap-18" name="sect">
+                        <label for="chap-18">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-19">
+                        <input type="radio" id="chap-19" name="sect">
+                        <label for="chap-19">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="storage-list storage-type">
+                    <div class="storage-list-header d-2xl-flex align-items-center justify-content-between">
+                      <h3 class="storage-list-title fw-500 lh-24 text-gray-26">Phân loại</h3>
+                      <span class="storage-list-down fs-12 text-red-6d">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="storage-list-option">
+                      <li class="radio-box" rel="chap-4">
+                        <input type="radio" id="chap-4" name="type" checked="">
+                        <label for="chap-4">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-5">
+                        <input type="radio" id="chap-5" name="type">
+                        <label for="chap-5">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 2</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-6">
+                        <input type="radio" id="chap-6" name="type">
+                        <label for="chap-6">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-7">
+                        <input type="radio" id="chap-7" name="type">
+                        <label for="chap-7">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-8">
+                        <input type="radio" id="chap-8" name="type">
+                        <label for="chap-8">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="storage-list storage-type">
+                    <div class="storage-list-header d-2xl-flex align-items-center justify-content-between">
+                      <h3 class="storage-list-title fw-500 lh-24 text-gray-26">Tỉnh thành</h3>
+                      <span class="storage-list-down fs-12 text-red-6d">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="storage-list-option">
+                      <li class="radio-box" rel="chap-9">
+                        <input type="radio" id="chap-9" name="city" checked="">
+                        <label for="chap-9">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-10">
+                        <input type="radio" id="chap-10" name="city">
+                        <label for="chap-10">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 2</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-11">
+                        <input type="radio" id="chap-11" name="city">
+                        <label for="chap-11">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-12">
+                        <input type="radio" id="chap-12" name="city">
+                        <label for="chap-12">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-13">
+                        <input type="radio" id="chap-13" name="city">
+                        <label for="chap-13">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 3</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="storage-list storage-type">
+                    <div class="storage-list-header d-2xl-flex align-items-center justify-content-between">
+                      <h3 class="storage-list-title fw-500 lh-24 text-gray-26">Quận/Huyện</h3>
+                      <span class="storage-list-down fs-12 text-red-6d">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="storage-list-option">
+                      <li class="radio-box" rel="chap-20">
+                        <input type="radio" id="chap-20" name="district" checked="">
+                        <label for="chap-20">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-21">
+                        <input type="radio" id="chap-21" name="district">
+                        <label for="chap-21">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-22">
+                        <input type="radio" id="chap-22" name="district">
+                        <label for="chap-22">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-23">
+                        <input type="radio" id="chap-23" name="district">
+                        <label for="chap-23">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-24">
+                        <input type="radio" id="chap-24" name="district">
+                        <label for="chap-24">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                      <li class="radio-box" rel="chap-25">
+                        <input type="radio" id="chap-25" name="district">
+                        <label for="chap-25">
+                          <div class="check">
+                            <img src="./images/buddha-name.png" alt="">
+                          </div>
+                          <span class="check-txt">Chương 1</span>
+                        </label>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end bot -->
+                <!-- see more -->
+                <button class="btn search-btn text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4">Tìm kiếm</button>
+                <!-- end see more -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end kho tàng phật giáo online -->
+
+        <!-- filter -->
+        <div class="w-1408 filter-block">
+          <ul class="filter-list d-2xl-flex align-items-center">
+            <li class="filter-item">
+              <button class="btn btn-filter fs-14 lh-22 text-red-6d d-2xl-flex align-items-center">
+                <span class="filter-txt mr-15">Thiền Tông</span>
+                <span class="filter-close"><i class="fas fa-times"></i></span>
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="btn btn-filter fs-14 lh-22 text-red-6d d-2xl-flex align-items-center">
+                <span class="filter-txt mr-15">Chùa, Chiềng</span>
+                <span class="filter-close"><i class="fas fa-times"></i></span>
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="btn btn-filter fs-14 lh-22 text-red-6d d-2xl-flex align-items-center">
+                <span class="filter-txt mr-15">Thành Phố Hồ Chí Minh</span>
+                <span class="filter-close"><i class="fas fa-times"></i></span>
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="btn btn-filter fs-14 lh-22 text-red-6d d-2xl-flex align-items-center">
+                <span class="filter-txt mr-15">Quận 1</span>
+                <span class="filter-close"><i class="fas fa-times"></i></span>
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="btn btn-filter btn-filter-clear fs-14 lh-22 text-white">
+                Xóa bộ lọc
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- end filter -->
+
+
+        <!-- kết quả tìm kiếm -->
+        <div class="search-result w-1408 d-2xl-block d-md-none">
+          <div class="search-result-heading d-2xl-flex align-items-center">
+            <div class="search-result-one">
+              <strong class="search-result-txt text-black fs-20 lh-28 text-uppercase">Kết quả</strong>&nbsp;&nbsp; 
+              <span class="search-result-txt text-gray-26 lh-24 fw-300">(100 kết quả)</span>
+            </div>
+            <div class="search-result-two">
+              <span class="search-result-txt text-red-6d fw-500 lh-24">A-Z</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="search-result-txt text-gray-26 fw-300 lh-24">Z-A</span>
+            </div>
+          </div>
+        </div>
+        <!-- end kết quả tìm kiếm -->
+
+        <!-- slider primary-->
+        <div class="main-block main-block2 detail-pagoda-slider-primary">
+            <div class="swiper mySwiperPogodaPrimary">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide detail-pagoda-slider-item">
+                        <img src="./images/4.jpg" alt="" class="detail-pagoda-slider-img">
+                    </div>
+                    <div class="swiper-slide detail-pagoda-slider-item">
+                        <img src="./images/2.jpg" alt="" class="detail-pagoda-slider-img">
+                    </div>
+                    <div class="swiper-slide detail-pagoda-slider-item">
+                        <img src="./images/3.jpg" alt="" class="detail-pagoda-slider-img">
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination swiper-pagination2"></div>
+                <!-- end pagination -->
+            </div>
+        </div>
+        <!-- end slider primary-->
+
+         <!-- slider secondary-->
+         <div class="main-block main-block2 detail-pagoda-slider-seconadry w-1408">
+            <div class="swiper mySwiperPogodaSecondaryTxt">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide detail-pagoda-slider-text text-center fs-20 lh-28 fw-500">
+                        Giới thiệu chung
+                    </div>
+                    <div class="swiper-slide detail-pagoda-slider-text text-center fs-20 lh-28 fw-500">
+                        Lược sử
+                    </div>
+                    <div class="swiper-slide detail-pagoda-slider-text text-center fs-20 lh-28 fw-500">
+                        Hình ảnh và Video
+                    </div>
+                </div>
+                <div class="d-2xl-none d-md-block">
+                    <!-- next prev -->
+                    <div class="swiper-button-next swiper-button-next2"></div>
+                    <div class="swiper-button-prev swiper-button-prev2"></div>
+                    <!-- end next prev -->
+                </div>
+            </div>
+
+            <div class="swiper mySwiperPogodaSecondary">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide detail-pagoda-slider-container">
+                        <div class="detail-pagoda-slider-content">
+                            <div class="slider-content-left">
+                                <h3 class="slider-content-left-title text-red-6d font-primary fs-30 lh-38 text-uppercase mb-12 fw-700">Chùa Vĩnh Nghiêm</h3>
+                                <div class="slider-content-left-txt fw-300 lh-24">
+                                    <p>Chùa được khởi công năm 1964 tại khu đất thấp nằm bên rạch Thị Nghè, và người ta phải chuyển khoảng 40.000 m³ đất từ xa lộ Biên Hòa về san lấp mặt bằng. Kinh phí xây dựng chùa khoảng 98 triệu đồng tiền lúc bấy giờ, với phần khuôn viên được cho là chính quyền VNCH cấp. Năm 1971, chùa Vĩnh Nghiêm cơ bản hoàn thành với các hạng mục, gồm tòa nhà trung tâm (tầng trên có ngôi Phật điện), Bảo tháp Quán Thế Âm, cơ sở dành cho hoạt động xã hội.  </p>
+                                    <p>Về sau, chùa lần lượt xây thêm các công trình khác, như Bảo tháp Xá Lợi Cộng đồng, Tháp đá Vĩnh Nghiêm, Phương trượng đường, khách đường, v.v...Từ miền Bắc, hai Hòa thượng là Thích Tâm Giác và Thích Thanh Kiểm vào miền Nam truyền bá đạo Phật, và sau đó đã cho xây dựng chùa Vĩnh Nghiêm. Họ lấy nguyên mẫu thiết kế từ một ngôi chùa gỗ cùng tên ở làng Đức La, xã Trí Yên, huyện Yên Dũng, tỉnh Bắc Giang; kiến lập từ đời vua Lý Thái Tổ, vốn là trung tâm truyền bá Phật giáo của Thiền phái Trúc Lâm.
+                                        Người vẽ kiểu cho công trình là kiến trúc sư Nguyễn Bá Lăng, có sự cộng tác của các ông Lê Tấn Chuyên và Cổ Văn Hậu…</p>
+                                </div>
+                            </div>
+                            <div class="slider-content-right d-md-none">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a
+                                        data-fancybox="gallery"
+                                        href="./images/4.jpg"
+                                        data-caption="viết caption ảnh ở đây....." 
+                                        class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide detail-pagoda-slider-container">
+                        <img src="./images/2.jpg" alt="" class="detail-pagoda-slider-img">
+                    </div>
+                    <div class="swiper-slide detail-pagoda-slider-container">
+                        <img src="./images/3.jpg" alt="" class="detail-pagoda-slider-img">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end slider secondary-->
+
+        <!-- liên hệ -->
+        <div class="w-1408 detail-pagoda-contact main-block">
+            <!-- map -->
+            <div class="detail-pagoda-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2723898934696!2d106.68048291533418!3d10.790437461884204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d353dd6f37%3A0x73b68690e34e3381!2zMzM5IMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgMTQsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1671076304230!5m2!1svi!2s" width="620" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- end map -->
+            <!-- address -->
+            <div class="detail-pagoda-address">
+                <div class=" fw-500">
+                    <h3 class="detail-pagoda-address-title fs-30 lh-38 text-uppercase text-red-6d mb-15 pb-15">Liên hệ</h3>
+                    <div class="detail-pagoda-address-item location d-2xl-flex align-items-center fs-14 mb-4">
+                        <i class="fas fa-map-marker-alt icon text-red-6d fs-20 mr-15"></i>
+                        339 Đ. Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Thành phố Hồ Chí Minh, Việt Nam
+                    </div>
+                    <div class="detail-pagoda-address-item phone location d-2xl-flex align-items-center fs-14">
+                        <i class="fas fa-phone-alt icon text-red-6d fs-15 mr-15"></i>
+                        (08) 3896 6798 - (08) 3896 4736
+                    </div>
+                </div>
+            </div>
+            <!-- end address -->
+        </div>
+        <!-- end liên hệ -->
+
+        <!-- những ngôi chùa cùng huyện -->
+        <div class="search-result w-1408">
+            <h2 class="heading-primary fw-500 fs-40 text-red-6d text-uppercase text-center d-2xl-block d-md-none">
+                Những ngôi chùa cùng quận/huyện
+              </h2>
+            <h2 class="heading-primary fw-500 fs-18 text-red-6d text-uppercase text-center d-2xl-none d-md-block">
+                Những ngôi chùa cùng quận/huyện
+              </h2>
+            <!-- field -->
+            <div class="search-result-field wrapper main-block">
+              <div class="search-result-container">
+                <!-- item -->
+                <div class="container-block-item">
+                  <!-- img -->
+                  <div class="container-block-img">
+                    <div class="">
+                      <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3 img">
+                          <img class="" src="./images/4.jpg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end img -->
+                  <!-- content -->
+                  <div class="container-block-content mt-15">
+                    <!-- title -->
+                    <h3 class="container-block-heading fs-25 lh-32 mb-15 text-red-6d">
+                      <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                    </h3>
+                    <!-- end title -->
+                    <!-- address -->
+                    <p class="container-block-address">
+                      <span class="text-red-6d fs-14 fw-600">Địa chỉ:</span> 
+                      <span class="fs-16 lh-24">Số 64/3 Huỳnh Lan Khanh, Q. Tân Bình, TP. Hồ Chí Minh</span>
+                    </p>
+                    <!-- end address -->
+                  </div>
+                  <!-- end content -->
+                  <button class="btn text-white bg-red-6d fs-12 w-100 d-2xl-none d-md-block lh-20 mt-4 p-8">Xem chi tiết</button>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="container-block-item">
+                  <!-- img -->
+                  <div class="container-block-img">
+                    <div class="">
+                      <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3 img">
+                          <img class="" src="./images/4.jpg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end img -->
+                  <!-- content -->
+                  <div class="container-block-content mt-15">
+                    <!-- title -->
+                    <h3 class="container-block-heading fs-25 lh-32 mb-15 text-red-6d">
+                      <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                    </h3>
+                    <!-- end title -->
+                    <!-- address -->
+                    <p class="container-block-address">
+                      <span class="text-red-6d fs-14 fw-600">Địa chỉ:</span> 
+                      <span class="fs-16 lh-24">Số 64/3 Huỳnh Lan Khanh, Q. Tân Bình, TP. Hồ Chí Minh</span>
+                    </p>
+                    <!-- end address -->
+                  </div>
+                  <!-- end content -->
+                  <button class="btn text-white bg-red-6d fs-12 w-100 d-2xl-none d-md-block lh-20 mt-4 p-8">Xem chi tiết</button>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="container-block-item">
+                  <!-- img -->
+                  <div class="container-block-img">
+                    <div class="">
+                      <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3 img">
+                          <img class="" src="./images/4.jpg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end img -->
+                  <!-- content -->
+                  <div class="container-block-content mt-15">
+                    <!-- title -->
+                    <h3 class="container-block-heading fs-25 lh-32 mb-15 text-red-6d">
+                      <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                    </h3>
+                    <!-- end title -->
+                    <!-- address -->
+                    <p class="container-block-address">
+                      <span class="text-red-6d fs-14 fw-600">Địa chỉ:</span> 
+                      <span class="fs-16 lh-24">Số 64/3 Huỳnh Lan Khanh, Q. Tân Bình, TP. Hồ Chí Minh</span>
+                    </p>
+                    <!-- end address -->
+                  </div>
+                  <!-- end content -->
+                  <button class="btn text-white bg-red-6d fs-12 w-100 d-2xl-none d-md-block lh-20 mt-4 p-8">Xem chi tiết</button>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="container-block-item">
+                  <!-- img -->
+                  <div class="container-block-img">
+                    <div class="">
+                      <div class="thumb-img">
+                        <a href="#" class="thumb-item thumb-5x3 img">
+                          <img class="" src="./images/4.jpg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end img -->
+                  <!-- content -->
+                  <div class="container-block-content mt-15">
+                    <!-- title -->
+                    <h3 class="container-block-heading fs-25 lh-32 mb-15 text-red-6d">
+                      <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                    </h3>
+                    <!-- end title -->
+                    <!-- address -->
+                    <p class="container-block-address">
+                      <span class="text-red-6d fs-14 fw-600">Địa chỉ:</span> 
+                      <span class="fs-16 lh-24">Số 64/3 Huỳnh Lan Khanh, Q. Tân Bình, TP. Hồ Chí Minh</span>
+                    </p>
+                    <!-- end address -->
+                  </div>
+                  <!-- end content -->
+                  <button class="btn text-white bg-red-6d fs-12 w-100 d-2xl-none d-md-block lh-20 mt-4 p-8">Xem chi tiết</button>
+                </div>
+                <!-- end item -->
+              </div>
+              <!-- see more -->
+              <button class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4">Xem thêm <strong>(50 kết quả)</strong></button>
+              <!-- end see more -->
+            </div>
+            <!-- end field -->
+          </div>
+          <!-- end những ngôi chùa cùng huyện -->
+  
+      
+
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <!-- back top -->
+      <div id="back-top"><i class="fas fa-arrow-up text-white"></i></div>
+      <!-- end back top -->
+
+      <!-- container -->
+      <div class="footer-container">
+        <div class="mb-15">
+          <a href="#"  class="">
+            <img src="./images/logo.png" alt="" class="mx-auto">
+          </a>
+        </div>
+
+        <p class="fw-500 text-center lh-24">Xiển dương Đạo Phật trên internet.</p>
+        <p class="fw-500 text-center lh-24">Dự án phi lợi nhuận, được bảo trợ bởi Ban TTTT TW Giáo hội PGVN.</p>
+        <div class="footer-social text-red-6d text-center my-12">
+          <a href="#" class="header-top__right-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="header-top__right-icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="header-top__right-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        <p class="fw-500 text-center lh-24">Email: buddha@daophatonline.com</p>
+        <p class="fs-14 text-center lh-24">Copyright © 2022 daophatonline.com All Rights Reserved</p>
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
+    <script src="./font-awesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./lib/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
