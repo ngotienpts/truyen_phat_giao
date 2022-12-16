@@ -1592,6 +1592,7 @@ body {
 }
 .storage-online .storage-container {
   padding: 30px 50px;
+  background-color: #fff;
 }
 
 .storage-top,
@@ -1809,6 +1810,108 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buddhist-name-top .storage-online {
+  margin-top: 0;
+}
+.buddhist-name-top .alphabet-list {
+  grid-column: 2/5;
+  padding: 6px 30px;
+}
+.buddhist-name-top .storage-list {
+  position: relative;
+}
+.buddhist-name-top .storage-list-option {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 34px;
+}
+.character-list .character-item {
+  display: flex;
+  align-items: baseline;
+}
+.character-list .character-item .character-txt li + li {
+  margin-top: 5px;
+}
+
+.buddhist-name-container-detail {
+  margin: auto;
+  max-width: 1054px;
+  margin-top: 90px;
+  padding: 32px 54px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.buddhist-name-container-detail .detail-content {
+  padding-top: 0;
+  max-height: 500px;
+  overflow: auto;
+}
+.buddhist-name-container-detail .detail-content::-webkit-scrollbar-thumb {
+  background-color: #6d1d1d;
+}
+.buddhist-name-container-detail .detail-content::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f2f2f4;
+}
+
+.breadcrumb-dt {
+  padding: 50px 0 35px;
+  border-bottom: 1px solid #262626;
+  flex-wrap: wrap;
+}
+.breadcrumb-dt .breadcrumb-item.active {
+  font-weight: 600;
+}
+.breadcrumb-dt .breadcrumb-item {
+  margin-bottom: 15px;
+}
+.breadcrumb-dt .breadcrumb-item:last-child {
+  pointer-events: none;
+}
+.breadcrumb-dt .breadcrumb-item + .breadcrumb-item:before {
+  padding: 8px;
+  color: #6d1d1d;
+  content: "/ ";
+}
+
+.detail-field-sect {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #6d1d1d;
+}
+.detail-field-sect .detail-content {
+  padding-top: 0;
+}
+.detail-field-sect .detail-content h2,
+.detail-field-sect .detail-content h3,
+.detail-field-sect .detail-content h4,
+.detail-field-sect .detail-content h5,
+.detail-field-sect .detail-content h6 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.detail-field-sect .detail-content button {
+  background-color: #f2f2f4;
+  margin-top: 30px;
+}
+
+.related-news {
+  padding-top: 0;
+}
+.related-news .related-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
 }
 
 #back-top {

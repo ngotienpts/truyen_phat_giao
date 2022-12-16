@@ -1,0 +1,32 @@
+.buddhist-name-top {
+  & .storage-online {
+    margin-top: 0;
+  }
+  & .alphabet-list {
+    grid-column: 2/5;
+    padding: 6px 30px;
+  }
+
+  & .storage-list {
+    position: relative;
+  }
+  & .storage-list-option {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+}
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 34px;
+
+  & .character-item {
+    display: flex;
+    align-items: baseline;
+
+    & .character-txt li + li {
+      margin-top: 5px;
+    }
+  }
+}
