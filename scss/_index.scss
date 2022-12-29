@@ -2,7 +2,7 @@ body {
   background-image: url("../images/Background.png");
   background-repeat: no-repeat;
 }
-#main {
+#main:not(.main-media) {
   padding-bottom: 90px;
 }
 .full-menu {

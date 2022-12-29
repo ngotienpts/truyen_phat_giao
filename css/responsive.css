@@ -6,6 +6,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .media-content_bot {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 80em) {
   .d-xl-none {
@@ -51,7 +55,7 @@
   }
 
   /*-------------------------------------------------------------*/
-  #main {
+  #main:not(.main-media) {
     padding-bottom: 35px;
   }
 
@@ -423,6 +427,11 @@
   }
   .related-news .related-item {
     margin-bottom: 16px;
+  }
+
+  .media-content_bot {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
 }
 @media (max-width: 48em) {

@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // fancybox
   var fancyboxes = document.querySelectorAll(".fancybox-full");
 
+  // show bạn có thể lắng nghe
+
+  var mediaSlideTopMb = document.querySelectorAll(".media-slider-top");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -132,6 +136,17 @@ document.addEventListener("DOMContentLoaded", function () {
           .slideToggle();
         $(this).parents(".storage-list").toggleClass("active");
       });
+
+      // bạn có thể lắng nghe
+      if (mediaSlideTopMb) {
+        mediaSlideTopMb.forEach(function (el) {
+          el.querySelector(".media-slider-top__heading").onclick = function () {
+            el.querySelector(".media-slider-top__list ").classList.toggle(
+              "active"
+            );
+          };
+        });
+      }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
     },
