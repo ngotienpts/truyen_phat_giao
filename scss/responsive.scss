@@ -12,6 +12,12 @@
   .media-content_bot {
     grid-template-columns: repeat(3, 1fr);
   }
+  // ----------------------------------------------------home
+  .pagoda-ol-box {
+    & .pagoda-ol-box__container {
+      width: auto;
+    }
+  }
 }
 // max width 1280px
 @media (max-width: 80em) {
@@ -501,6 +507,113 @@
       margin-top: 0;
     }
   }
+  /*-------------------------------------------------------------home*/
+  .classical-works {
+    & .container-block {
+      display: block;
+    }
+
+    & .container-block-heading {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    & .container-block-item {
+      margin-bottom: 30px;
+    }
+
+    & .see-more {
+      margin-top: 10px;
+    }
+  }
+
+  .pagoda-ol-box {
+    padding: 0;
+    & .pagoda-ol-box__container {
+      padding: 80px 20px;
+      width: 100%;
+    }
+    & .pagoda-ol-box__content {
+      padding: 15px 20px;
+    }
+
+    & .container-block-heading {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    & .pagoda-ol-box__img {
+      min-height: 490px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .masonry-brick--h {
+    flex: auto;
+    height: 200px;
+    min-width: 150px;
+  }
+  .masonry-brick--h:nth-child(3n + 1) {
+    width: 320px;
+  }
+  .masonry-brick--h:nth-child(3n + 2) {
+    width: 100px;
+  }
+  .masonry-brick--h:nth-child(3n + 3) {
+    width: 320px;
+  }
+
+  .mindfulness-room {
+    & .col-container {
+      display: block;
+    }
+    & .mySwiperMindfulnessSecondary {
+      margin-top: 15px;
+    }
+    & .mindfulness-tabs {
+      margin-bottom: 0;
+      border-bottom: none;
+      justify-content: inherit;
+    }
+    & .mindfulness-item {
+      padding-bottom: 10px;
+      font-size: 16px;
+      &.swiper-slide {
+        width: 100% !important;
+        margin: 0;
+      }
+
+      &.swiper-slide-thumb-active {
+        border-width: 1px;
+      }
+    }
+    & .col-item {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      border-top: 1px solid #d9d9d9;
+    }
+    & .col-item-heading {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 2px;
+    }
+
+    & .swiper-button-next {
+      right: -10px;
+    }
+    & .swiper-button-prev {
+      left: -10px;
+    }
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      color: #6d1d1d;
+    }
+    & .swiper-button-next:after,
+    & .swiper-button-prev:after {
+      font-size: 15px;
+    }
+  }
 }
 
 // max width 640px
@@ -513,6 +626,27 @@
   }
   .d-sm-flex {
     display: flex;
+  }
+  /*------------------------------------------------------home*/
+  .masonry-brick--h {
+    flex: auto;
+    height: 120px;
+    min-width: 100px;
+  }
+  .masonry-brick {
+    margin: 0 0 4px 4px;
+  }
+  .masonry-brick--h:nth-child(3n + 1) {
+    width: 180px;
+  }
+  .masonry-brick--h:nth-child(3n + 2) {
+    width: 50px;
+  }
+  .masonry-brick--h:nth-child(3n + 3) {
+    width: 150px;
+  }
+  .masonry-brick--h:nth-child(3n + 4) {
+    width: 140px;
   }
 }
 

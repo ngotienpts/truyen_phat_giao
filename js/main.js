@@ -243,6 +243,36 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
     },
+    // slider phòng chánh niệm
+    sliderMindfulness: function () {
+      var swiper3 = new Swiper(".mySwiperMindfulnessPrimary", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        freeMode: false,
+        allowTouchMove: false,
+        watchSlidesProgress: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+      var swiper4 = new Swiper(".mySwiperMindfulnessSecondary", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 1,
+        autoHeight: true,
+        navigation: {
+          nextEl: ".swiper-button-next3",
+          prevEl: ".swiper-button-prev3",
+        },
+        thumbs: {
+          swiper: swiper3,
+        },
+      });
+    },
     // window scroll
     windowScroll: function () {
       var _this = this;
@@ -265,6 +295,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.sliderDetailPgodaPrimary();
       // slider detail chua secondary
       this.sliderDetailPgodaSecondary();
+      // slider phòng chánh niệm
+      this.sliderMindfulness();
     },
   };
 

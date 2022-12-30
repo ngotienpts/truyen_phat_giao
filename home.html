@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon.png" sizes="32x32">
+    <!-- end favicon -->
+    <title>Truyện Phật Giáo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="./font-awesome/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- submenu -->
+    <nav id="sidebar" class="" style="position: fixed">
+      <div class="navbar-mb-header">
+        <span class="navbar-mb-header__close js_close_sub">
+          <i class="fa fa-times"></i>
+        </span>
+        <div class="navbar-mb-header__logo">
+          <a href="/" title="">
+            <img src="./images/Logo.png" alt="" class="navbar-mb-header__img" />
+          </a>
+        </div>
+      </div>
+
+      <div class="search-mb">
+        <form action="" method="">
+          <div class="search-mb-flex">
+            <div class="btn-search-mb"><i class="fa fa-search"></i></div>
+            <input type="hidden" name="mod" value="archive" />
+            <input type="hidden" name="act" value="search" />
+            <input
+              type="text"
+              class="form-search-mb"
+              name="search"
+              placeholder="Tìm kiếm"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="navbar-mb-cate-title">Chuyên mục</div>
+
+      <ul class="navbar-mb-cate-list">
+        <li class="navbar-mb-cate-item">
+          <a href="#">Trang chủ</a>
+        </li>
+        <li class="navbar-mb-cate-item">
+          <div class="navbar-mb-cate-item__header">
+            <a href="#" class="navbar-mb-cate-item__title">Tin tức</a>
+            <div class="js_show_drop_mb">
+              <i class="fa fa-chevron-down navbar-mb-cate-item__icon"></i>
+            </div>
+          </div>
+          <ul class="navbar-mb-cate-item__list">
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Trong nước</a>
+            </li>
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Quốc tế</a>
+            </li>
+            <li class="navbar-mb-cate-item__child">
+              <a href="#">Tin Phật sự</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- end submenu -->
+  
+    <!-- header -->
+    <header id="header">
+      <div class="header">
+        <!-- header top -->
+        <div class="bg-red-6d">
+          <div class="header-top fs-14 text-white-f2 w-1408 wrapper d-2xl-flex d-lg-none align-items-center justify-content-between">
+            <!-- left -->
+            <div class="header-top__left d-2xl-flex align-items-center">
+              <p class="header-top__left-item"><strong>Thứ 6</strong>, 10/28/2022 10:25(GMT+7)</p>
+              <a class="header-top__left-item" href="#">Kinh phật</a>
+              <a class="header-top__left-item" href="#">Vật phẩm phật giáo</a>
+              <a class="header-top__left-item" href="#">Mới nhất</a>
+              <a class="header-top__left-item" href="#">Đức pháp chủ</a>
+            </div>
+            <!-- end left -->
+            <!-- right -->
+            <div class="header-top__right d-2xl-flex align-items-center">
+              <a href="#" class="header-top__right-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="header-top__right-icon">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="header-top__right-icon">
+                <i class="fab fa-tiktok"></i>
+              </a>
+  
+              <div class="header-top__right-wether">Hà Nội&nbsp; <strong>25*C</strong> &nbsp; <strong>61%</strong></div>
+              
+            </div>
+            <!-- end right -->
+          </div>
+          <!-- mb -->
+          <div class="header-top-mb d-2xl-none d-lg-flex align-items-center justify-content-between fs-12 text-white px-20">
+            <p class=""><strong>Thứ 6</strong>, 10/28/2022 10:25(GMT+7)</p>
+            <a class="" href="#">&#8226;&nbsp;Quan tâm</a>
+          </div>
+          <!-- end mb -->
+        </div>
+        <!-- end header top -->
+        <!-- navbar -->
+        <div class="navbar-block d-2xl-block d-lg-none">
+          <ul class="navbar w-1552  wrapper d-2xl-flex align-items-center justify-content-between text-uppercase">
+            <li class="navbar-item">
+              <a href="#">
+                <img src="./images/logo.png" alt="">
+              </a>
+            </li>
+            <li class="navbar-item active home">
+              <a href="#">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Chùa trực tuyến</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Tam tạng kinh điển</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Kho tàng phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Truyện phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Từ điển phật học</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Phatgiao.org</a>
+              
+            </li>
+            <li class="navbar-item js_showMenu">
+              Tất Cả
+              <i class="fas fa-bars"></i>
+            </li>
+            <li class="navbar-item js_showSearch">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- end navbar -->
+        <!-- navbar mb -->
+        <div class="bg-gray-f2 d-2xl-none d-lg-block">
+          <ul class="navbar-block-mb d-lg-flex align-items-center justify-content-between px-20 py-10 ">
+            <li class="navbar-mb-bar js_show_submenu">
+              <i class="fas fa-bars"></i>
+            </li>
+            <li class="navbar-mb-logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="">
+              </a>
+            </li>
+            <li class="navbar-mb-search js_showSearch">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+          <ul class="header-nav-mb d-lg-flex align-items-center px-20 py-10">
+            <li class="navbar-item active home">
+              <a href="#">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Chùa trực tuyến</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Tam tạng kinh điển</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Kho tàng phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Truyện phật giáo</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Từ điển phật học</a>
+              
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-item__link">Phatgiao.org</a>
+              
+            </li>
+          </ul>
+        </div>
+        <!-- end navbar mb -->
+        <!-- full menu  -->
+       <div class="full-menu">
+        <div class="w-1408 wrapper full-menu-container">
+          <h3 class="full-menu-heading">Tất cả chuyên mục</h3>
+          <span class="close-full-menu"><i class="fa fa-close"></i></span>
+          <div class="full-menu-block">
+            <div class="full-menu-scroll">
+              <ul class="full-menu-list">
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link">Chùa Việt</a>
+                </li>
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link">Phỏng vấn</a>
+                </li>
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link">Kinh Phật</a>
+                  <ul class="full-menu-sub">
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh Pháp cú</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Chú Đại bi</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh Dược sư</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh Địa Tạng</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kinh A Di Đà</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="full-menu-item">
+                  <a href="#" class="full-menu-item__link"
+                    >Phật giáo thường thức</a
+                  >
+                  <ul class="full-menu-sub">
+                    <li class="full-menu-sub-item">
+                      <a href="#">Hỏi - Đáp</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Kiến thức</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Hỏi đáp cùng Thầy Viên Minh</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="full-menu-item">
+                  <a href="" class="full-menu-item__link"
+                    >Phật pháp và cuộc sống</a
+                  >
+                  <ul class="full-menu-sub">
+                    <li class="full-menu-sub-item">
+                      <a href="#">Gieo mầm thiện</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Góc nhìn Phật tử</a>
+                    </li>
+                    <li class="full-menu-sub-item">
+                      <a href="#">Phật giáo và người trẻ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end full menu  -->
+      <!-- search -->
+      <div class="search-header">
+        <div class="w-1408 wrapper">
+          <form action="" >
+            <div
+              class="form-control-group d-2xl-flex align-items-center position-relative">
+              <input type="text" name="search-header" class="from-control-input form-search-input" placeholder="Tìm kiếm" autocomplete="off"/>
+              <div class="position-absolute search-header-btn">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end search -->
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      
+      
+      <!-- top main -->
+      <div class="top-main position-relative d-2xl-block d-md-none">
+        <img src="./images/bg_home.png" alt="">
+        <div class="content text-white position-absolute w-1408 wrapper w-100">
+            <h1 class="title fw-700 font-primary text-uppercase text-center">
+                Dự án xiển dương Đạo Phật trên internet <br>
+                Bảo trợ bởi Ban TTTT Trung ương Giáo hội PGVN
+            </h1>
+        </div>
+      </div>
+      <!-- end top main -->
+      <!-- top main mobile -->
+      <div class="top-main-mb d-2xl-none d-md-block position-relative">
+        <img src="./images/bg_home_mb.png" alt="">
+        <div class="content text-white position-absolute w-1408 wrapper w-100">
+            <h1 class="title fw-700 font-primary text-uppercase text-center fs-14 lh-20">
+                Dự án xiển dương Đạo Phật trên internet <br>
+                Bảo trợ bởi Ban TTTT Trung ương Giáo hội PGVN
+            </h1>
+        </div>
+      </div>
+      <!-- end top main mobile -->
+
+      <!-- tam tạng kinh điểm -->
+      <div class="classical-works w-1408 wrapper main-block">
+        <h2 class="heading-primary fw-500 fs-40 text-red-6d text-uppercase text-center">Các tác phẩm kinh điển</h2>
+        <p class="des-primary fw-300 text-center mt-15">Tuyển tập thông tin về các ngôi chùa Việt, các nghi lễ thờ cúng, tông phái Phật Giáo cùng nhiều thông tin hữu ích khác về Phật giáo Việt Nam và thế giới</p>
+        <img src="./images/buddha-name.png" alt="" class="mx-auto mt-15 mb-10">
+        <!-- container -->
+        <div class="container-block">
+          <!-- item -->
+          <div class="container-block-item">
+            <!-- img -->
+            <div class="container-block-img">
+              <div class="">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3 img">
+                    <img class="" src="./images/4.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- end img -->
+            <!-- content -->
+            <div class="container-block-content mt-15">
+              <!-- title -->
+              <h3 class="container-block-heading fs-25 lh-32 mb-15 font-primary text-uppercase text-center">
+                <a href="#" class="fw-700">Kinh tạng</a>
+              </h3>
+              <!-- end title -->
+              <a href="#" class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4 text-uppercase w-230 text-center">Xem ngay</a>
+            </div>
+            <!-- end content -->
+          </div>
+          <!-- end item -->
+          <!-- item -->
+          <div class="container-block-item">
+            <!-- img -->
+            <div class="container-block-img">
+              <div class="">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3 img">
+                    <img class="" src="./images/4.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- end img -->
+            <!-- content -->
+            <div class="container-block-content mt-15">
+              <!-- title -->
+              <h3 class="container-block-heading fs-25 lh-32 mb-15 font-primary text-uppercase text-center">
+                <a href="#" class="fw-700">Kinh tạng</a>
+              </h3>
+              <!-- end title -->
+              <a href="#" class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4 text-uppercase w-230 text-center">Xem ngay</a>
+            </div>
+            <!-- end content -->
+          </div>
+          <!-- end item -->
+          <!-- item -->
+          <div class="container-block-item">
+            <!-- img -->
+            <div class="container-block-img">
+              <div class="">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3 img">
+                    <img class="" src="./images/4.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- end img -->
+            <!-- content -->
+            <div class="container-block-content mt-15">
+              <!-- title -->
+              <h3 class="container-block-heading fs-25 lh-32 mb-15 font-primary text-uppercase text-center">
+                <a href="#" class="fw-700">Kinh tạng</a>
+              </h3>
+              <!-- end title -->
+              <a href="#" class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4 text-uppercase w-230 text-center">Xem ngay</a>
+            </div>
+            <!-- end content -->
+          </div>
+          <!-- end item -->
+         
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end tam tạng kinh điểm -->
+
+      <!-- pagoda online -->
+      <div class="pagoda-ol-box main-block position-relative">
+        <img src="./images/bg_home_2.png" alt="" class="pagoda-ol-box__img">
+        <div class="pagoda-ol-box__container position-absolute w-1408 w-100">
+            <div class="pagoda-ol-box__content">
+                <h3 class="container-block-heading fs-40 lh-50 fw-500 mb-15 text-red-6d text-uppercase text-center">Lễ chùa trực tuyến</h3>
+                <h4 class="container-block-sapo lh-24 fw-500 mb-15 text-uppercase text-center">Một lòng tin, hạnh, nguyện hướng về đức phật và bồ tát</h4>
+                <img src="./images/buddha-name.png" alt="" class="mx-auto mt-15 mb-10">
+                <p class="container-block-des text-center lh-24 mb-15">Phương tiện trang nghiêm để quý Phật tử thắp hương lễ Phật & Bồ Tát, tụng Kinh và niệm Phật khi chưa có điều kiện đến chiêm bái thực sự ở ngôi chùa ngoài đời.</p>
+                <a href="#" class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4 text-uppercase w-230 text-center">Thắp hương tại đây</a>
+            </div>
+        </div>
+      </div>
+      <!-- end pagoda online -->
+
+      <!-- kho tàng phật giáo -->
+      <div class="storage-pagoda w-1408 wrapper main-block">
+        <h2 class="heading-primary fw-500 fs-40 text-red-6d text-uppercase text-center">Kho tàng phật giáo</h2>
+        <p class="des-primary fw-300 text-center mt-15">Tuyển tập thông tin về các ngôi chùa Việt, các nghi lễ thờ cúng, tông phái Phật Giáo cùng nhiều thông tin hữu ích khác về Phật giáo Việt Nam và thế giới</p>
+        <img src="./images/buddha-name.png" alt="" class="mx-auto mt-15 mb-10">
+        <!-- container -->
+        <div class="container-block">
+          <div class="masonry masonry--h">
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+            <figure class="masonry-brick masonry-brick--h">
+                <a href="#">
+                    <img src="./images/3.jpg">
+                </a>
+            </figure>
+          </div>
+          <a href="#" class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 mt-4 text-uppercase w-230 text-center">Khám phá ngay</a>
+        </div>
+      </div>
+      <!-- end kho tàng phật giáo -->
+
+      <!-- phòng chánh niệm -->
+      <div class="mindfulness-room w-1408 wrapper main-block">
+        <h2 class="heading-primary fw-500 fs-40 text-red-6d text-uppercase text-center">Phòng chánh niệm</h2>
+        <p class="des-primary fw-300 text-center mt-15">Tuyển tập thông tin về các ngôi chùa Việt, các nghi lễ thờ cúng, tông phái Phật Giáo cùng nhiều thông tin hữu ích khác về Phật giáo Việt Nam và thế giới</p>
+        <img src="./images/buddha-name.png" alt="" class="mx-auto mt-15 mb-10">
+        <!-- container -->
+        <div class="container-block">
+            <div class="swiper mySwiperMindfulnessPrimary">
+                <div class="swiper-wrapper mindfulness-tabs">
+                    <div class="swiper-slide mindfulness-item text-center fs-25 lh-32 fw-700 font-primary text-uppercase">
+                        Chuông chùa
+                    </div>
+                    <div class="swiper-slide mindfulness-item text-center fs-25 lh-32 fw-700 font-primary text-uppercase">
+                        Nhạc thiền
+                    </div>
+                    <div class="swiper-slide mindfulness-item text-center fs-25 lh-32 fw-700 font-primary text-uppercase">
+                        Kinh phật
+                    </div>
+                    <div class="swiper-slide mindfulness-item text-center fs-25 lh-32 fw-700 font-primary text-uppercase">
+                        Tiếng mõ
+                    </div>
+                </div>
+                <div class="d-2xl-none d-md-block">
+                    <!-- next prev -->
+                    <div class="swiper-button-next swiper-button-next3"></div>
+                    <div class="swiper-button-prev swiper-button-prev3"></div>
+                    <!-- end next prev -->
+                </div>
+            </div>
+
+            <div class="swiper mySwiperMindfulnessSecondary">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mindfulness-pane">
+                        <div class="col-container">
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="col-item">
+                                <!-- img -->
+                                <div class="col-item-img">
+                                <div class="">
+                                    <div class="thumb-img">
+                                    <a href="#" class="thumb-item thumb-5x3 img">
+                                        <img class="" src="./images/4.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="col-item-content text-red-6d">
+                                <!-- title -->
+                                <h3 class="col-item-heading fs-25 lh-32 mb-15">
+                                    <a href="#" class="fw-500">7 Bước đến miền cực lạc</a>
+                                </h3>
+                                <!-- end title -->
+                                <!-- author -->
+                                <p class="col-item-author container-block-author text-italic lh-22 fs-14 mb-15 fw-300 fw-300">Thích Minh Nguyệt</p>
+                                <!-- end author -->
+                                <!-- public -->
+                                <div class="col-item-public text-gray-2650 fs-14 lh-22 fw-300 text-italic">
+                                    <span>12/11/22</span> 
+                                    <span><i class="fas fa-eye"></i>&nbsp;20.000</span>
+                                </div>
+                                <!-- end public -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end item -->
+                        </div>
+                        <a href="#" class="btn see-more text-white bg-red-6d fs-14 w-100 d-2xl-block lh-22 pt-4 mt-4 text-uppercase w-230 text-center">Nghe nhiều hơn tại đây</a>
+                    </div>
+                    <div class="swiper-slide mindfulness-pane">
+                        <img src="./images/2.jpg" alt="" >
+                    </div>
+                    <div class="swiper-slide mindfulness-pane">
+                        <img src="./images/3.jpg" alt="" >
+                    </div>
+                    <div class="swiper-slide mindfulness-pane">
+                        <img src="./images/4.jpg" alt="" >
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+      </div>
+      <!-- end phòng chánh niệm -->
+
+
+      
+      
+
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <!-- back top -->
+      <div id="back-top"><i class="fas fa-arrow-up text-white"></i></div>
+      <!-- end back top -->
+
+      <!-- container -->
+      <div class="footer-container">
+        <div class="mb-15">
+          <a href="#"  class="">
+            <img src="./images/logo.png" alt="" class="mx-auto">
+          </a>
+        </div>
+
+        <p class="fw-500 text-center lh-24">Xiển dương Đạo Phật trên internet.</p>
+        <p class="fw-500 text-center lh-24">Dự án phi lợi nhuận, được bảo trợ bởi Ban TTTT TW Giáo hội PGVN.</p>
+        <div class="footer-social text-red-6d text-center my-12">
+          <a href="#" class="header-top__right-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="header-top__right-icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="header-top__right-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        <p class="fw-500 text-center lh-24">Email: buddha@daophatonline.com</p>
+        <p class="fs-14 text-center lh-24">Copyright © 2022 daophatonline.com All Rights Reserved</p>
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
+    <script src="./font-awesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

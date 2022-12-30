@@ -10,6 +10,10 @@
   .media-content_bot {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .pagoda-ol-box .pagoda-ol-box__container {
+    width: auto;
+  }
 }
 @media (max-width: 80em) {
   .d-xl-none {
@@ -452,6 +456,105 @@
     display: block;
     margin-top: 0;
   }
+
+  /*-------------------------------------------------------------home*/
+  .classical-works .container-block {
+    display: block;
+  }
+  .classical-works .container-block-heading {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .classical-works .container-block-item {
+    margin-bottom: 30px;
+  }
+  .classical-works .see-more {
+    margin-top: 10px;
+  }
+
+  .pagoda-ol-box {
+    padding: 0;
+  }
+  .pagoda-ol-box .pagoda-ol-box__container {
+    padding: 80px 20px;
+    width: 100%;
+  }
+  .pagoda-ol-box .pagoda-ol-box__content {
+    padding: 15px 20px;
+  }
+  .pagoda-ol-box .container-block-heading {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .pagoda-ol-box .pagoda-ol-box__img {
+    min-height: 490px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .masonry-brick--h {
+    flex: auto;
+    height: 200px;
+    min-width: 150px;
+  }
+
+  .masonry-brick--h:nth-child(3n+1) {
+    width: 320px;
+  }
+
+  .masonry-brick--h:nth-child(3n+2) {
+    width: 100px;
+  }
+
+  .masonry-brick--h:nth-child(3n+3) {
+    width: 320px;
+  }
+
+  .mindfulness-room .col-container {
+    display: block;
+  }
+  .mindfulness-room .mySwiperMindfulnessSecondary {
+    margin-top: 15px;
+  }
+  .mindfulness-room .mindfulness-tabs {
+    margin-bottom: 0;
+    border-bottom: none;
+    justify-content: inherit;
+  }
+  .mindfulness-room .mindfulness-item {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .mindfulness-room .mindfulness-item.swiper-slide {
+    width: 100% !important;
+    margin: 0;
+  }
+  .mindfulness-room .mindfulness-item.swiper-slide-thumb-active {
+    border-width: 1px;
+  }
+  .mindfulness-room .col-item {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    border-top: 1px solid #d9d9d9;
+  }
+  .mindfulness-room .col-item-heading {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+  }
+  .mindfulness-room .swiper-button-next {
+    right: -10px;
+  }
+  .mindfulness-room .swiper-button-prev {
+    left: -10px;
+  }
+  .mindfulness-room .swiper-button-next, .mindfulness-room .swiper-button-prev {
+    color: #6d1d1d;
+  }
+  .mindfulness-room .swiper-button-next:after, .mindfulness-room .swiper-button-prev:after {
+    font-size: 15px;
+  }
 }
 @media (max-width: 40em) {
   .d-sm-none {
@@ -464,6 +567,33 @@
 
   .d-sm-flex {
     display: flex;
+  }
+
+  /*------------------------------------------------------home*/
+  .masonry-brick--h {
+    flex: auto;
+    height: 120px;
+    min-width: 100px;
+  }
+
+  .masonry-brick {
+    margin: 0 0 4px 4px;
+  }
+
+  .masonry-brick--h:nth-child(3n+1) {
+    width: 180px;
+  }
+
+  .masonry-brick--h:nth-child(3n+2) {
+    width: 50px;
+  }
+
+  .masonry-brick--h:nth-child(3n+3) {
+    width: 150px;
+  }
+
+  .masonry-brick--h:nth-child(3n+4) {
+    width: 140px;
   }
 }
 
