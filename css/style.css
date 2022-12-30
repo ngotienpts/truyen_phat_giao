@@ -2362,6 +2362,35 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.lyrics-box {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lyrics-box .lyrics {
+  padding: 40px 58px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lyrics-box .lyrics-container {
+  max-width: 700px;
+  max-height: 50vh;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+.lyrics-box .lyrics-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.lyrics-box .lyrics-container::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+.lyrics-box .lyrics-content p {
+  margin-bottom: 15px;
+}
+
 #back-top {
   position: fixed;
   right: 1rem;
