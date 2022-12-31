@@ -335,6 +335,62 @@
               </div>
             </div>
             <!-- end lời bài hát -->
+
+            <!-- thanh control -->
+            <div class="control-bar text-white">
+              <!-- info -->
+              <div class="control-bar__info">
+                <h1 class="control-bar__title">
+                  <span class="fs-20 lh-28 fw-500">Trung Bộ Kinh</span>
+                  <span class="fs-14 lh-22 text-italic fw-300">- Phần 1 (1-50)</span>
+                </h1>
+                <p class="control-bar__name fs-14 lh-22 text-white mt-8">Hòa Thượng Thích Minh Châu</p>
+              </div>
+              <!-- end info -->
+              <!-- dashboard -->
+              <div class="control-bar__dashboard">
+                <div class="control">
+                  <div class="btn btn-randoom">
+                    <i class="fas fa-random"></i>
+                  </div>
+                  <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                  </div>
+                  <div class="btn btn-toggle-play">
+                    <i class="fas fa-play"></i>
+                    <!-- <i class="fas fa-pause"></i> -->
+                  </div>
+                  <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                  </div>
+                  <div class="btn btn-repeat">
+                    <i class="fas fa-repeat"></i>
+                  </div>
+                </div>
+                <div class="range">
+                  <span class="curr-time">00:00</span>
+                  <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                  <span class="dur-time">00:00</span>
+                </div>
+              </div>
+              <!-- end dashboard -->
+              <!-- side -->
+              <div class="control-bar__side">
+                <div class="control-bar__side-lyric">
+                  <img src="./images/list-music-icon.png" alt="">
+                  <span>Xem lời</span>
+                </div>
+                <div class="volume">
+                  <i class="fas fa-volume-up volume-icon js-volume"></i>
+                  <!-- <i class="fas fa-volume-mute"></i> -->
+                  <input id="range" class="range-volumn" type="range" value="0" step="4" min="0" max="100">
+                </div>
+                <i class="fas fa-expand fullscreen-icon js-fullscreen"></i>
+                <!-- <i class="fas fa-compress"></i> -->
+              </div>
+              <!-- end side -->
+            </div>
+            <!-- end thanh control -->
         </div>
         
         <!-- end pc -->
