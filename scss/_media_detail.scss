@@ -21,6 +21,14 @@
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s linear;
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
   & .lyrics {
     padding: 40px 58px;
     background-repeat: no-repeat;
@@ -55,8 +63,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s linear;
+  &.hide {
+    background-color: transparent;
 
+    & .control-bar__info,
+    & .control-bar__dashboard {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  & .control-bar__info {
+    opacity: 1;
+    visibility: visible;
+    flex-shrink: 0;
+  }
   & .control-bar__dashboard {
+    opacity: 1;
+    visibility: visible;
     width: 100%;
     max-width: 700px;
     text-align: center;
@@ -79,7 +103,7 @@
         }
       }
 
-      & .btn-randoom,
+      & .btn-random,
       & .btn-repeat {
         opacity: 0.6;
         transition: opacity 0.2s linear;
@@ -87,8 +111,18 @@
         &.active {
           opacity: 1;
         }
+        &.disable {
+          pointer-events: none;
+        }
       }
-
+      & .btn-next,
+      & .btn-prev {
+        transition: all 0.2s ease-out;
+        border-radius: 50%;
+        &:hover {
+          background-color: rgba($color: #fff, $alpha: 0.1);
+        }
+      }
       & .btn-toggle-play {
         background-color: #fff;
         border-radius: 50%;
@@ -101,9 +135,16 @@
       width: 100%;
       display: flex;
       align-items: center;
-      & input[type="range"] {
+
+      & .range-progress {
         flex: 1;
         margin: 0 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      & .range-progress input[type="range"] {
+        width: 100%;
       }
     }
   }
@@ -111,6 +152,7 @@
   & .control-bar__side {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 
     & .control-bar__side-lyric {
       display: flex;
@@ -124,6 +166,23 @@
     & .volume {
       margin: 0 30px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      & .range-volumn {
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        width: 116px;
+      }
+
+      & .js-volume {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     & .fullscreen-icon {
@@ -132,4 +191,87 @@
       cursor: pointer;
     }
   }
+}
+
+.range-input {
+  background: linear-gradient(
+    to left,
+    rgba($color: #fff, $alpha: 0.3) 100%,
+    #df9609 0%
+  );
+  height: 6px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.range-input [type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 6px;
+}
+.range-input [type="range"]:focus {
+  outline: none;
+}
+.range-input [type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+.range-input [type="range"]::-moz-range-track {
+  background: transparent;
+}
+.range-input [type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+.range-input [type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+.range-input [type="range"]::-ms-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+.range-input [type="range"]::-ms-fill-lower {
+  background: #df9609;
+}
+.range-input [type="range"]::-ms-fill-upper {
+  background: rgba($color: #fff, $alpha: 0.3);
+}
+.range-input [type="range"]::-ms-track {
+  color: transparent;
+  border: 0 solid transparent;
+  background: transparent;
+}
+.range-input [type="range"]::-ms-tooltip {
+  display: none;
 }

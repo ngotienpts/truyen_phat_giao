@@ -311,10 +311,36 @@
     <!-- main -->
     <main id="main" class="main-media">
       <!-- media wrapper -->
-      <div class="media-wrapper d-2xl-block d-md-none">
+      <div class="media-wrapper d-2xl-block d-md-block">
         <!-- pc -->
         <img src="./images/bg4.png" alt="" class="media-bg">
-        <div class="media-container">
+        <div class="media-container media-container-detail">
+            <div class="d-2xl-none d-md-block w-100">
+              <div class="media-wrapper-mb">
+                <!-- top -->
+                <div class="media-slider-top">
+                    <div class="media-slider-top__heading text-white fs-14 lh-22 ">
+                        <h2 class="font-primary fw-700 text-uppercase">Bạn có thể <span class="text-orange-df">Lắng nghe</span></h2>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <ul class="media-slider-top__list fs-14 lh-22 text-white fw-500">
+                        <li class="media-slider-top__item">
+                            <a href="#">Chuông Chùa</a>
+                        </li>
+                        <li class="media-slider-top__item">
+                            <a href="#">Nhạc Thiền</a>
+                        </li>
+                        <li class="media-slider-top__item active">
+                            <a href="#">Kinh Phật</a>
+                        </li>
+                        <li class="media-slider-top__item">
+                            <a href="#">Tiếng Mõ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end top -->
+              </div>
+            </div>
             <!-- back cate -->
             <a href="#" class="media-back-cate">
                 <i class="fas fa-chevron-right"></i>
@@ -335,7 +361,10 @@
               </div>
             </div>
             <!-- end lời bài hát -->
-
+            <div class="d-2xl-none d-md-block w-100">
+              <img src="./images/bg4.png" alt="" class="media-bg-mb">
+            </div>
+            <audio id="audio"></audio>
             <!-- thanh control -->
             <div class="control-bar text-white">
               <!-- info -->
@@ -350,7 +379,7 @@
               <!-- dashboard -->
               <div class="control-bar__dashboard">
                 <div class="control">
-                  <div class="btn btn-randoom">
+                  <div class="btn btn-random">
                     <i class="fas fa-random"></i>
                   </div>
                   <div class="btn btn-prev">
@@ -358,7 +387,6 @@
                   </div>
                   <div class="btn btn-toggle-play">
                     <i class="fas fa-play"></i>
-                    <!-- <i class="fas fa-pause"></i> -->
                   </div>
                   <div class="btn btn-next">
                     <i class="fas fa-step-forward"></i>
@@ -369,7 +397,9 @@
                 </div>
                 <div class="range">
                   <span class="curr-time">00:00</span>
-                  <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                  <div class="range-progress range-input">
+                    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                  </div>
                   <span class="dur-time">00:00</span>
                 </div>
               </div>
@@ -381,11 +411,16 @@
                   <span>Xem lời</span>
                 </div>
                 <div class="volume">
-                  <i class="fas fa-volume-up volume-icon js-volume"></i>
-                  <!-- <i class="fas fa-volume-mute"></i> -->
-                  <input id="range" class="range-volumn" type="range" value="0" step="4" min="0" max="100">
+                  <div class="js-volume">
+                    <i class="fas fa-volume-up volume-icon"></i>
+                  </div>
+                  <div class="range-volumn range-input">
+                    <input id="rangeVolum" class="range-volumn-input" type="range" value="50" step="4" min="0" max="100">
+                  </div>
                 </div>
-                <i class="fas fa-expand fullscreen-icon js-fullscreen"></i>
+                <div class=" fullscreen-icon js-fullscreen">
+                  <i class="fas fa-expand"></i>
+                </div>
                 <!-- <i class="fas fa-compress"></i> -->
               </div>
               <!-- end side -->
@@ -396,206 +431,14 @@
         <!-- end pc -->
     </div>
     <!-- end media wrapper -->
-    <!-- mb -->
-    <div class="media-wrapper d-2xl-none d-md-block">
-        <div class="media-wrapper-mb">
-            <!-- top -->
-            <div class="media-slider-top">
-                <div class="media-slider-top__heading text-white fs-14 lh-22 ">
-                    <h2 class="font-primary fw-700 text-uppercase">Bạn có thể <span class="text-orange-df">Lắng nghe</span></h2>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-                <ul class="media-slider-top__list fs-14 lh-22 text-white fw-500">
-                    <li class="media-slider-top__item">
-                        <a href="#">Chuông Chùa</a>
-                    </li>
-                    <li class="media-slider-top__item">
-                        <a href="#">Nhạc Thiền</a>
-                    </li>
-                    <li class="media-slider-top__item active">
-                        <a href="#">Kinh Phật</a>
-                    </li>
-                    <li class="media-slider-top__item">
-                        <a href="#">Tiếng Mõ</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- end top -->
-            <div class="media-container-mb mt-20">
-                <h1 class="text-white fs-22 lh-30 fw-500 text-center">Kinh Phật</h1>
-                <!-- sắp xếp -->
-                <div class="media-content_top">
-                    <!-- search -->
-                    <div class="media-search">
-                        <div class="media-search-group">
-                            <form action="" >
-                                <div
-                                class="form-control-group d-2xl-flex align-items-center position-relative">
-                                <input type="text" name="search-storage" class="from-control-input form-search-input w-100 d-2xl-none d-md-block" placeholder="Tìm kiếm" autocomplete="off"/>
-                                <div class="position-absolute media-search-btn text-white">
-                                    <i class="fas fa-search"></i>
-                                </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- end search -->
-                    <!-- filter -->
-                    <div class="media-content__filter text-white">
-                        <div class="media-content__filter-select">
-                            <div class="custom-select">
-                                <select name="time" id="time">
-                                    <option value="0">Mới nhất</option>
-                                    <option value="1">Mới nhất</option>
-                                    <option value="2">Cũ nhất</option>
-                                </select>
-                            </div>
-                            <div class="custom-select">
-                                <select name="order" id="order">
-                                    <option value="0">Thứ tự A-Z</option>
-                                    <option value="1">Thứ tự A-Z</option>
-                                    <option value="2">Thứ tự Z-A</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end filter -->
-                </div>
-                <!-- end sắp xếp -->
-                <!-- bot -->
-                <div class="media-content_bot-mb mt-20">
-                    <!-- item -->
-                    <div class="container-block-item mb-15">
-                        <!-- img -->
-                        <div class="container-block-img">
-                          <div class="">
-                            <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3 img">
-                                <img class="" src="./images/4.jpg" alt=""></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="container-block-content">
-                          <!-- title -->
-                          <h3 class="container-block-heading fs-14 lh-22 mb-10 text-red-6d">
-                            <a href="#" class="fw-500">Tăng chi bộ Kinh Đức Phật</a>
-                          </h3>
-                          <!-- end title -->
-                          <!-- address -->
-                          <p class="container-block-des text-gray-26 fs-14 text-italic lh-22">
-                            <a href="#">
-                                Lắng nghe <i class="fas fa-play-circle ml-10 text-red-6d"></i>
-                            </a>
-                          </p>
-                          <!-- end address -->
-                        </div>
-                        <!-- end content -->
-                      </div>
-                    <!-- end item -->
-                    <!-- item -->
-                    <div class="container-block-item mb-15">
-                        <!-- img -->
-                        <div class="container-block-img">
-                          <div class="">
-                            <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3 img">
-                                <img class="" src="./images/4.jpg" alt=""></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="container-block-content">
-                          <!-- title -->
-                          <h3 class="container-block-heading fs-14 lh-22 mb-10 text-red-6d">
-                            <a href="#" class="fw-500">Tăng chi bộ Kinh Đức Phật</a>
-                          </h3>
-                          <!-- end title -->
-                          <!-- address -->
-                          <p class="container-block-des text-gray-26 fs-14 text-italic lh-22">
-                            <a href="#">
-                                Lắng nghe <i class="fas fa-play-circle ml-10 text-red-6d"></i>
-                            </a>
-                          </p>
-                          <!-- end address -->
-                        </div>
-                        <!-- end content -->
-                      </div>
-                    <!-- end item -->
-                    <!-- item -->
-                    <div class="container-block-item mb-15">
-                        <!-- img -->
-                        <div class="container-block-img">
-                          <div class="">
-                            <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3 img">
-                                <img class="" src="./images/4.jpg" alt=""></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="container-block-content">
-                          <!-- title -->
-                          <h3 class="container-block-heading fs-14 lh-22 mb-10 text-red-6d">
-                            <a href="#" class="fw-500">Tăng chi bộ Kinh Đức Phật</a>
-                          </h3>
-                          <!-- end title -->
-                          <!-- address -->
-                          <p class="container-block-des text-gray-26 fs-14 text-italic lh-22">
-                            <a href="#">
-                                Lắng nghe <i class="fas fa-play-circle ml-10 text-red-6d"></i>
-                            </a>
-                          </p>
-                          <!-- end address -->
-                        </div>
-                        <!-- end content -->
-                      </div>
-                    <!-- end item -->
-                    <!-- item -->
-                    <div class="container-block-item mb-15">
-                        <!-- img -->
-                        <div class="container-block-img">
-                          <div class="">
-                            <div class="thumb-img">
-                              <a href="#" class="thumb-item thumb-5x3 img">
-                                <img class="" src="./images/4.jpg" alt=""></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="container-block-content">
-                          <!-- title -->
-                          <h3 class="container-block-heading fs-14 lh-22 mb-10 text-red-6d">
-                            <a href="#" class="fw-500">Tăng chi bộ Kinh Đức Phật</a>
-                          </h3>
-                          <!-- end title -->
-                          <!-- address -->
-                          <p class="container-block-des text-gray-26 fs-14 text-italic lh-22">
-                            <a href="#">
-                                Lắng nghe <i class="fas fa-play-circle ml-10 text-red-6d"></i>
-                            </a>
-                          </p>
-                          <!-- end address -->
-                        </div>
-                        <!-- end content -->
-                      </div>
-                    <!-- end item -->
-                </div>
-                <!-- end bot -->
-            </div>
-        </div>
-    </div>
-    <!-- end mb -->
+    
     </main>
     <!-- end main -->
     <script src="./font-awesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./lib/fancybox/jquery.fancybox.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/audio.js"></script>
     <script>
         var x, i, j, l, ll, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -675,6 +518,37 @@
         /*if the user clicks anywhere outside the select box,
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
-        </script>
+    </script>
+
+    <script>
+    //   var RangeSlider = (function() {
+    //   var elRangeInputs = document.querySelectorAll(".range-input");
+
+    //   function setProgress(elTarget) {
+    //     var elRangeBar = elTarget.parentElement;
+    //     var intThumbWidth = elRangeBar.clientHeight * 3;
+    //     var intRangeBarWidth = elRangeBar.clientWidth - intThumbWidth;
+    //     var intThumbWidthOffset = intThumbWidth / 2;
+        
+    //     var intProgressPosition = (elTarget.value - elTarget.min) / (elTarget.max - elTarget.min);
+    //     var intRangePosition = (intRangeBarWidth * intProgressPosition) + intThumbWidthOffset;
+        
+
+    //     elRangeBar.style.background =
+    //       "linear-gradient(to right, #df9609 " +
+    //       intRangePosition + "px, #ffffff4d " +
+    //       intRangePosition + "px";
+    //   }
+
+    //   for (var i = 0; i < elRangeInputs.length; i++) {
+    //     elRangeInputs[i].firstElementChild.addEventListener("input", function() {
+    //       setProgress(this);
+    //     });
+
+    //     setProgress(elRangeInputs[i].firstElementChild);
+    //   }
+    // })();
+    </script>
+  
   </body>
 </html>

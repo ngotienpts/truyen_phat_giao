@@ -241,6 +241,7 @@
     display: none;
     background-color: #651d1b;
     backdrop-filter: blur(10px);
+    z-index: 10;
 
     &.active {
       display: block;

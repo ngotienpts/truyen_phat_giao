@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var mediaSlideTopMb = document.querySelectorAll(".media-slider-top");
 
+  // media container
+  var mediaContainer = document.querySelector(".media-container");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -146,6 +149,48 @@ document.addEventListener("DOMContentLoaded", function () {
             );
           };
         });
+      }
+
+      //
+      if (mediaContainer) {
+        var lyrics = mediaContainer.querySelector(".lyrics-box");
+        var sideLyrics = mediaContainer.querySelector(
+          ".control-bar__side-lyric"
+        );
+        var fullsreen = document.querySelector(".js-fullscreen");
+        var controlInfo = document.querySelector(".control-bar__info");
+        var imgMb = document.querySelector(".media-bg-mb");
+        // fullscreen
+        if (widthDoc.offsetWidth < 992) {
+          lyrics.classList.add("hide");
+        }
+        if (fullsreen) {
+          fullsreen.onclick = function () {
+            if (this.closest(".control-bar")) {
+              this.closest(".control-bar").classList.toggle("hide");
+              lyrics.classList.toggle("hide");
+            }
+            if (this.firstElementChild.matches(".fa-expand")) {
+              this.firstElementChild.classList.remove("fa-expand");
+              this.firstElementChild.classList.add("fa-compress");
+            } else {
+              this.firstElementChild.classList.remove("fa-compress");
+              this.firstElementChild.classList.add("fa-expand");
+            }
+            if (widthDoc.offsetWidth < 992) {
+              mediaContainer.classList.toggle("full");
+            }
+          };
+        }
+        // show lyrics
+
+        sideLyrics.onclick = function () {
+          lyrics.classList.toggle("hide");
+          if (widthDoc.offsetWidth < 992) {
+            controlInfo.classList.toggle("hide");
+            imgMb.classList.toggle("hide");
+          }
+        };
       }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});

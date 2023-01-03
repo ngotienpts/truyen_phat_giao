@@ -437,6 +437,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
+
+  .control-bar {
+    padding: 40px 10px;
+  }
 }
 @media (max-width: 48em) {
   .d-md-none {
@@ -554,6 +558,81 @@
   }
   .mindfulness-room .swiper-button-next:after, .mindfulness-room .swiper-button-prev:after {
     font-size: 15px;
+  }
+
+  .media-container-detail {
+    background-color: #6d1d1d;
+    padding: 30px 20px 40px 20px;
+    height: 100vh vh;
+    overflow: hidden;
+    display: block;
+  }
+  .media-container-detail.full {
+    background-color: transparent;
+  }
+  .media-container-detail.full .lyrics-box.hide, .media-container-detail.full .media-bg-mb {
+    display: none;
+  }
+  .media-container-detail .media-wrapper-mb {
+    padding: 0;
+    background-color: transparent;
+    height: auto;
+    overflow: inherit;
+  }
+  .media-container-detail .media-slider-top {
+    margin-bottom: 30px;
+  }
+  .media-container-detail .lyrics-box {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: unset;
+  }
+  .media-container-detail .lyrics-box.hide {
+    display: none;
+  }
+  .media-container-detail .lyrics-box .lyrics {
+    padding: 16px 20px;
+  }
+  .media-container-detail .control-bar {
+    display: block;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+  .media-container-detail .control-bar .control-bar__side {
+    justify-content: space-between;
+  }
+  .media-container-detail .media-bg-mb {
+    height: 30vh;
+    object-fit: cover;
+    width: 100%;
+  }
+  .media-container-detail .control-bar .control-bar__info {
+    margin-bottom: 30px;
+  }
+  .media-container-detail .control-bar .control-bar__info.hide {
+    display: none;
+  }
+  .media-container-detail .control-bar .control-bar__dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .media-container-detail .control-bar .control-bar__dashboard .range {
+    order: 1;
+    margin: 0 0 20px 0;
+  }
+  .media-container-detail .control-bar .control-bar__dashboard .control {
+    order: 2;
+  }
+  .media-container-detail .media-bg-mb.hide {
+    display: none;
+  }
+
+  .media-back-cate {
+    display: none;
   }
 }
 @media (max-width: 40em) {
