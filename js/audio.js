@@ -36,10 +36,23 @@ var prevBtn = document.querySelector(".btn-prev");
 var nextBtn = document.querySelector(".btn-next");
 var randomBtn = document.querySelector(".btn-random");
 var repeatBtn = document.querySelector(".btn-repeat");
-var curtime = document.querySelector(".currTime");
-var durtime = document.querySelector(".durrTime");
+var curtime = document.querySelector(".curr-time");
+var durtime = document.querySelector(".dur-time");
 var volRange = document.getElementById("rangeVolum");
 var muteVolume = document.querySelector(".js-volume");
+var seekbar = document.querySelector(".seekbar");
+
+// xử lý hiện thời gian bài hát
+setInterval(() => {
+  curtime.textContent = formatTimer(audio.currentTime);
+  durtime.textContent = formatTimer(audio.duration);
+}, 1000);
+function formatTimer(num) {
+  var min = Math.floor(num / 60);
+  var sec = Math.floor(num - min * 60);
+  if (sec < 10) return `${min}:0${sec}`;
+  else return `${min}:${sec}`;
+}
 
 var appSong = {
   currentIndex: 0,
@@ -50,61 +63,55 @@ var appSong = {
     {
       name: "Nevada",
       singer: "Vicetone",
-      path: "../musics/1.mp3",
+      path: "./musics/1.mp3",
       time: "02:31",
     },
     {
       name: "SummerTime",
       singer: "K-391",
-      path: "../musics/2.mp3",
+      path: "./musics/2.mp3",
       time: "01:29",
     },
     {
       name: "Monodi",
       singer: "TheFastRast",
-      path: "../musics/3.mp3",
+      path: "./musics/3.mp3",
       time: "02:12",
     },
     {
       name: "Reality",
       singer: "Lost Frenquensies",
-      path: "../musics/4.mp3",
+      path: "./musics/4.mp3",
       time: "03:25",
     },
     {
       name: "Ngay khac la",
       singer: "Tripide",
-      path: "../musics/5.mp3",
+      path: "./musics/5.mp3",
       time: "02:03",
-    },
-    {
-      name: "Lemon tree",
-      singer: "Dj Desa remix",
-      path: "../music/6.mp3",
-      time: "02:01",
     },
     {
       name: "Sugar",
       singer: "Maron 5",
-      path: "../musics/7.mp3",
+      path: "./musics/7.mp3",
       time: "02:02",
     },
     {
       name: "Mylove",
       singer: "westlife",
-      path: "../musics/8.mp3",
+      path: "./musics/8.mp3",
       time: "01:43",
     },
     {
       name: "Attention",
       singer: "Chenest",
-      path: "../musics/9.mp3",
+      path: "./musics/9.mp3",
       time: "02:16",
     },
     {
       name: "Monster",
       singer: "Keytykai",
-      path: "../musics/10.mp3",
+      path: "./musics/10.mp3",
       time: "02:52",
     },
   ],
@@ -120,11 +127,11 @@ var appSong = {
     //  Xử lý play audio
     playBtn.onclick = function () {
       if (_this.isPlaying) {
-        audio.pause();
         this.firstElementChild.innerHTML = '<i class="fas fa-play"></i>';
+        audio.pause();
       } else {
-        audio.play();
         this.firstElementChild.innerHTML = '<i class="fas fa-pause"></i>';
+        audio.play();
       }
     };
     // Khi song được  play
@@ -225,7 +232,7 @@ var appSong = {
       }
     };
   },
-
+  //
   loadCurrentSong: function () {
     audio.src = this.currentSong.path;
   },
